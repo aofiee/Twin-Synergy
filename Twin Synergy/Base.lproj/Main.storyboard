@@ -155,7 +155,7 @@ Suan-Luang bangkok 10250</string>
                                         <rect key="frame" x="13" y="129" width="16" height="16"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone: 092-5905444" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHl-L6-Xsc">
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone: 092-5905444" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHl-L6-Xsc">
                                         <rect key="frame" x="42" y="126" width="197" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
@@ -166,7 +166,7 @@ Suan-Luang bangkok 10250</string>
                                         <rect key="frame" x="13" y="176" width="16" height="11"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email: info@twinsynergy.co.th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMf-91-aJD">
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email: info@twinsynergy.co.th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMf-91-aJD">
                                         <rect key="frame" x="42" y="171" width="197" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
@@ -199,6 +199,8 @@ Suan-Luang bangkok 10250</string>
                     <tabBarItem key="tabBarItem" title="" image="icon_profile" id="gBt-zx-m0u"/>
                     <connections>
                         <outlet property="addressLabel" destination="k4d-nj-cDA" id="cCU-RL-wjJ"/>
+                        <outlet property="emailMeLabel" destination="AMf-91-aJD" id="rXZ-Mv-oRr"/>
+                        <outlet property="telephoneLabel" destination="NHl-L6-Xsc" id="9T7-d4-GVh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdP-pe-e3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>

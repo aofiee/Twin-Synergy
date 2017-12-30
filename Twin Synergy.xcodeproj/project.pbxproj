@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA21FF7DFE70055464A /* ProfileViewController.swift */; };
 		70C39AA61FF7E4110055464A /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA51FF7E4110055464A /* mapViewController.swift */; };
+		70C39AA91FF7EBC70055464A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C39AA81FF7EBC70055464A /* MessageUI.framework */; };
 		70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2111FF75E06002CB5CF /* AppDelegate.swift */; };
 		70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2131FF75E06002CB5CF /* ViewController.swift */; };
 		70E3D2171FF75E06002CB5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E3D2151FF75E06002CB5CF /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		70C39AA21FF7DFE70055464A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		70C39AA51FF7E4110055464A /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		70C39AA81FF7EBC70055464A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		70E3D20E1FF75E06002CB5CF /* Twin Synergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twin Synergy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3D2111FF75E06002CB5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70E3D2131FF75E06002CB5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C39AA91FF7EBC70055464A /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +105,14 @@
 			path = mapViewController;
 			sourceTree = "<group>";
 		};
+		70C39AA71FF7EBC70055464A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70C39AA81FF7EBC70055464A /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70E3D2051FF75E06002CB5CF = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +120,7 @@
 				70E3D2281FF75E06002CB5CF /* Twin SynergyTests */,
 				70E3D2331FF75E06002CB5CF /* Twin SynergyUITests */,
 				70E3D20F1FF75E06002CB5CF /* Products */,
+				70C39AA71FF7EBC70055464A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

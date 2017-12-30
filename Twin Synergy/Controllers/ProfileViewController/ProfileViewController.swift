@@ -7,18 +7,55 @@
 //
 
 import UIKit
+import MessageUI
 
-class ProfileViewController: CustomNavigationController {
-
+class ProfileViewController: CustomNavigationController,MFMailComposeViewControllerDelegate {
+    let contactTelephoneNumber = "+66925905444"
     @IBOutlet var addressLabel: UILabel!
+    @IBOutlet var telephoneLabel: UILabel!
+    @IBOutlet var emailMeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello")
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
-        addressLabel.addGestureRecognizer(tapGesture)
-        // Do any additional setup after loading the view.
+        let tapGestureForAddress = UITapGestureRecognizer(target: self, action: #selector(mapHandleTap(sender:)))
+        addressLabel.addGestureRecognizer(tapGestureForAddress)
+        
+        let tabGestureForTelephone = UITapGestureRecognizer(target: self, action: #selector(telephoneHandleTap(sender:)))
+        telephoneLabel.addGestureRecognizer(tabGestureForTelephone)
+        
+        let tabGestureForEmail = UITapGestureRecognizer(target: self, action: #selector(emailHandleTap(sender:)))
+        emailMeLabel.addGestureRecognizer(tabGestureForEmail)
     }
-    @IBAction func handleTap(sender: UITapGestureRecognizer) {
+
+    @IBAction func emailHandleTap(sender: UITapGestureRecognizer) {
+        guard ((sender.view as? UILabel)?.text) != nil else { return }
+        guard MFMailComposeViewController.canSendMail() else {
+            print("Mail services are not available")
+            return
+        }
+        let composeVC = MFMailComposeViewController()
+        composeVC.mailComposeDelegate = self
+        composeVC.setToRecipients(["info@twinsynergy.co.th"])
+        composeVC.setSubject("Hello!")
+        composeVC.setMessageBody("Hello from The Hell!", isHTML: false)
+        present(composeVC, animated: true, completion: nil)
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func telephoneHandleTap(sender: UITapGestureRecognizer) {
+        guard ((sender.view as? UILabel)?.text) != nil else { return }
+        if let url = URL(string: "tel://\(contactTelephoneNumber)"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
+
+    @IBAction func mapHandleTap(sender: UITapGestureRecognizer) {
         guard ((sender.view as? UILabel)?.text) != nil else { return }
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "MapStoryboard")
