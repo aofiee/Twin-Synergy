@@ -105,7 +105,7 @@
 		70E3D2101FF75E06002CB5CF /* Twin Synergy */ = {
 			isa = PBXGroup;
 			children = (
-				70E3D24F1FF78FAE002CB5CF /* Structs */,
+				70E3D24F1FF78FAE002CB5CF /* Class */,
 				70E3D24A1FF7774E002CB5CF /* Protocals */,
 				70E3D2421FF77231002CB5CF /* Controllers */,
 				70E3D2111FF75E06002CB5CF /* AppDelegate.swift */,
@@ -161,12 +161,12 @@
 			path = Protocals;
 			sourceTree = "<group>";
 		};
-		70E3D24F1FF78FAE002CB5CF /* Structs */ = {
+		70E3D24F1FF78FAE002CB5CF /* Class */ = {
 			isa = PBXGroup;
 			children = (
 				70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */,
 			);
-			path = Structs;
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
