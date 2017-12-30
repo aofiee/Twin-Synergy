@@ -10,6 +10,7 @@
 		70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA21FF7DFE70055464A /* ProfileViewController.swift */; };
 		70C39AA61FF7E4110055464A /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA51FF7E4110055464A /* mapViewController.swift */; };
 		70C39AA91FF7EBC70055464A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C39AA81FF7EBC70055464A /* MessageUI.framework */; };
+		70C39AAF1FF7FF590055464A /* mainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AAE1FF7FF590055464A /* mainMenuViewController.swift */; };
 		70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2111FF75E06002CB5CF /* AppDelegate.swift */; };
 		70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2131FF75E06002CB5CF /* ViewController.swift */; };
 		70E3D2171FF75E06002CB5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E3D2151FF75E06002CB5CF /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		70C39AA21FF7DFE70055464A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		70C39AA51FF7E4110055464A /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		70C39AA81FF7EBC70055464A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		70C39AAE1FF7FF590055464A /* mainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMenuViewController.swift; sourceTree = "<group>"; };
 		70E3D20E1FF75E06002CB5CF /* Twin Synergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twin Synergy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3D2111FF75E06002CB5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70E3D2131FF75E06002CB5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		70C39AAD1FF7FF430055464A /* mainMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70C39AAE1FF7FF590055464A /* mainMenuViewController.swift */,
+			);
+			path = mainMenuViewController;
+			sourceTree = "<group>";
+		};
 		70E3D2051FF75E06002CB5CF = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 		70E3D2421FF77231002CB5CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				70C39AAD1FF7FF430055464A /* mainMenuViewController */,
 				70C39AA41FF7E3FF0055464A /* mapViewController */,
 				70C39AA11FF7DFCC0055464A /* ProfileViewController */,
 				70E3D2431FF7723B002CB5CF /* HomeViewController */,
@@ -338,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */,
+				70C39AAF1FF7FF590055464A /* mainMenuViewController.swift in Sources */,
 				70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */,
 				70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */,
 				70E3D24C1FF7777D002CB5CF /* MyColorProtocal.swift in Sources */,

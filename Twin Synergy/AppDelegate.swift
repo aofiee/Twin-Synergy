@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MyColorProtocal {
         UINavigationBar.appearance().barTintColor = hexStringToUIColor(hex: "#17274E")
         UINavigationBar.appearance().tintColor = hexStringToUIColor(hex: "#ffffff")
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        UIButton.appearance().setTitleColor(hexStringToUIColor(hex: "#ffffff"), for: [])
         return true
     }
 

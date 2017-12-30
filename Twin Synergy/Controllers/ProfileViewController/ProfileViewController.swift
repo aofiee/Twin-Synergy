@@ -10,10 +10,16 @@ import UIKit
 import MessageUI
 
 class ProfileViewController: CustomNavigationController,MFMailComposeViewControllerDelegate {
+    let emailTo = "info@twinsynergy.co.th"
     let contactTelephoneNumber = "+66925905444"
+    let titleEmail = "q-o-o-p"
+    let emailDetail = """
+    This message send from \"Twin Synergy\" iOS Application.
+    """
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var telephoneLabel: UILabel!
     @IBOutlet var emailMeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let tapGestureForAddress = UITapGestureRecognizer(target: self, action: #selector(mapHandleTap(sender:)))
@@ -34,9 +40,9 @@ class ProfileViewController: CustomNavigationController,MFMailComposeViewControl
         }
         let composeVC = MFMailComposeViewController()
         composeVC.mailComposeDelegate = self
-        composeVC.setToRecipients(["info@twinsynergy.co.th"])
-        composeVC.setSubject("Hello!")
-        composeVC.setMessageBody("Hello from The Hell!", isHTML: false)
+        composeVC.setToRecipients([emailTo])
+        composeVC.setSubject(titleEmail)
+        composeVC.setMessageBody(emailDetail, isHTML: false)
         present(composeVC, animated: true, completion: nil)
     }
     

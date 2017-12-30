@@ -48,5 +48,8 @@ class CustomNavigationController: UIViewController {
     }
     @objc func mainMenuTapped(sender: AnyObject) {
         print("zzzzz")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MainMenuStoryboard")
+        present(vc, animated: true)
     }
 }
