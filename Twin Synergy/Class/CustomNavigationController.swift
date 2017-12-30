@@ -35,6 +35,10 @@ class CustomNavigationController: UIViewController {
         navigationController?.topViewController?.navigationItem.leftBarButtonItem = mainMenuButton
         navigationController?.topViewController?.navigationItem.rightBarButtonItems = [searchBarButton,cameraBarButton]
         //navigationController?.topViewController?.navigationItem.rightBarButtonItem = searchButton
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationController?.topViewController?.navigationItem.backBarButtonItem = backItem
     }
     @objc func searchTapped(sender: AnyObject) {
         print("xxxxx")

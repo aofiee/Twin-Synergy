@@ -130,7 +130,7 @@ for website and mobile application. </string>
         <!--ProfileViewController-->
         <scene sceneID="DbZ-L0-0dX">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" title="ProfileViewController" id="40x-3r-R9W" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" title="ProfileViewController" id="40x-3r-R9W" customClass="ProfileViewController" customModule="Twin_Synergy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3bG-VT-03s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,21 +138,98 @@ for website and mobile application. </string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG2" translatesAutoresizingMaskIntoConstraints="NO" id="Dsf-5D-4UC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ble-8W-SAa">
+                                <rect key="frame" x="68" y="228" width="239" height="212"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4d-nj-cDA">
+                                        <rect key="frame" x="42" y="12" width="189" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Twin synergy Co.,Ltd. 
+1,3 Soi 4 Seri Village 8  Suan-Luang
+Suan-Luang bangkok 10250</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_call" translatesAutoresizingMaskIntoConstraints="NO" id="Tjv-DT-P3e">
+                                        <rect key="frame" x="13" y="129" width="16" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone: 092-5905444" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHl-L6-Xsc">
+                                        <rect key="frame" x="42" y="126" width="197" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_mail" translatesAutoresizingMaskIntoConstraints="NO" id="Nsg-Da-ngE">
+                                        <rect key="frame" x="13" y="176" width="16" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email: info@twinsynergy.co.th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMf-91-aJD">
+                                        <rect key="frame" x="42" y="171" width="197" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_address" translatesAutoresizingMaskIntoConstraints="NO" id="pG1-aD-zqD">
+                                        <rect key="frame" x="13" y="17" width="16" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="G8h-Cn-eem"/>
+                                    <constraint firstAttribute="width" constant="239" id="aDb-jz-8Md"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Dsf-5D-4UC" firstAttribute="top" secondItem="3bG-VT-03s" secondAttribute="top" id="NeK-Yd-8Rk"/>
-                            <constraint firstItem="Dsf-5D-4UC" firstAttribute="leading" secondItem="LyF-Hv-mVA" secondAttribute="leading" id="X3z-Yo-Yt8"/>
-                            <constraint firstAttribute="bottom" secondItem="Dsf-5D-4UC" secondAttribute="bottom" id="dI1-wB-LGa"/>
-                            <constraint firstItem="Dsf-5D-4UC" firstAttribute="trailing" secondItem="LyF-Hv-mVA" secondAttribute="trailing" id="dNU-pG-U0M"/>
+                            <constraint firstItem="ble-8W-SAa" firstAttribute="centerX" secondItem="3bG-VT-03s" secondAttribute="centerX" id="Gc2-gF-ZEy"/>
+                            <constraint firstAttribute="bottom" secondItem="Dsf-5D-4UC" secondAttribute="bottom" id="Iy5-bC-v6h"/>
+                            <constraint firstItem="Dsf-5D-4UC" firstAttribute="trailing" secondItem="LyF-Hv-mVA" secondAttribute="trailing" id="T38-wr-mQj"/>
+                            <constraint firstItem="Dsf-5D-4UC" firstAttribute="top" secondItem="3bG-VT-03s" secondAttribute="top" id="chf-Xz-F4K"/>
+                            <constraint firstItem="ble-8W-SAa" firstAttribute="centerY" secondItem="3bG-VT-03s" secondAttribute="centerY" id="sYt-yM-EQr"/>
+                            <constraint firstItem="Dsf-5D-4UC" firstAttribute="leading" secondItem="LyF-Hv-mVA" secondAttribute="leading" id="zXg-HE-L2o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LyF-Hv-mVA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icon_profile" id="gBt-zx-m0u"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="k4d-nj-cDA" id="cCU-RL-wjJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdP-pe-e3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3213.5999999999999" y="450.22488755622192"/>
+        </scene>
+        <!--Get Direction-->
+        <scene sceneID="tUw-dc-lqk">
+            <objects>
+                <viewController storyboardIdentifier="MapStoryboard" title="Get Direction" id="BLC-g6-eou" customClass="mapViewController" customModule="Twin_Synergy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sfs-Ee-59P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bFP-hH-Fxa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bFP-hH-Fxa" firstAttribute="trailing" secondItem="USd-Xf-d9X" secondAttribute="trailing" id="6Yq-3F-SMh"/>
+                            <constraint firstItem="bFP-hH-Fxa" firstAttribute="leading" secondItem="USd-Xf-d9X" secondAttribute="leading" id="E5c-7d-RKy"/>
+                            <constraint firstItem="bFP-hH-Fxa" firstAttribute="top" secondItem="Sfs-Ee-59P" secondAttribute="top" id="ZRA-jp-N8E"/>
+                            <constraint firstItem="bFP-hH-Fxa" firstAttribute="bottom" secondItem="USd-Xf-d9X" secondAttribute="bottom" id="zyd-jh-Qdq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="USd-Xf-d9X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H15-4J-Fh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3944.8000000000002" y="450.22488755622192"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="he1-GX-qhR">
@@ -180,6 +257,7 @@ for website and mobile application. </string>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ZaL-m9-UGF"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7UA-xt-1Z2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -196,8 +274,11 @@ for website and mobile application. </string>
     </scenes>
     <resources>
         <image name="BG2" width="376" height="667"/>
+        <image name="icon_address" width="25" height="24"/>
         <image name="icon_album" width="29" height="21"/>
+        <image name="icon_call" width="16" height="16"/>
         <image name="icon_home" width="25" height="24"/>
+        <image name="icon_mail" width="16" height="10"/>
         <image name="icon_profile" width="25" height="25"/>
     </resources>
 </document>
