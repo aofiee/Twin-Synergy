@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2111FF75E06002CB5CF /* AppDelegate.swift */; };
+		70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2131FF75E06002CB5CF /* ViewController.swift */; };
+		70E3D2171FF75E06002CB5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E3D2151FF75E06002CB5CF /* Main.storyboard */; };
+		70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2181FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld */; };
+		70E3D21C1FF75E06002CB5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E3D21B1FF75E06002CB5CF /* Assets.xcassets */; };
+		70E3D21F1FF75E06002CB5CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E3D21D1FF75E06002CB5CF /* LaunchScreen.storyboard */; };
+		70E3D22A1FF75E06002CB5CF /* Twin_SynergyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2291FF75E06002CB5CF /* Twin_SynergyTests.swift */; };
+		70E3D2351FF75E06002CB5CF /* Twin_SynergyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2341FF75E06002CB5CF /* Twin_SynergyUITests.swift */; };
+		70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2481FF77294002CB5CF /* HomeViewController.swift */; };
+		70E3D24C1FF7777D002CB5CF /* MyColorProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D24B1FF7777D002CB5CF /* MyColorProtocal.swift */; };
+		70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70E3D2261FF75E06002CB5CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E3D2061FF75E06002CB5CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70E3D20D1FF75E06002CB5CF;
+			remoteInfo = "Twin Synergy";
+		};
+		70E3D2311FF75E06002CB5CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E3D2061FF75E06002CB5CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70E3D20D1FF75E06002CB5CF;
+			remoteInfo = "Twin Synergy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70E3D20E1FF75E06002CB5CF /* Twin Synergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twin Synergy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E3D2111FF75E06002CB5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70E3D2131FF75E06002CB5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70E3D2161FF75E06002CB5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70E3D2191FF75E06002CB5CF /* Twin_Synergy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Twin_Synergy.xcdatamodel; sourceTree = "<group>"; };
+		70E3D21B1FF75E06002CB5CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70E3D21E1FF75E06002CB5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70E3D2201FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E3D2251FF75E06002CB5CF /* Twin SynergyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twin SynergyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E3D2291FF75E06002CB5CF /* Twin_SynergyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twin_SynergyTests.swift; sourceTree = "<group>"; };
+		70E3D22B1FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E3D2301FF75E06002CB5CF /* Twin SynergyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twin SynergyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E3D2341FF75E06002CB5CF /* Twin_SynergyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twin_SynergyUITests.swift; sourceTree = "<group>"; };
+		70E3D2361FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E3D2481FF77294002CB5CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		70E3D24B1FF7777D002CB5CF /* MyColorProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorProtocal.swift; sourceTree = "<group>"; };
+		70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70E3D20B1FF75E06002CB5CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E3D2221FF75E06002CB5CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E3D22D1FF75E06002CB5CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70E3D2051FF75E06002CB5CF = {
+			isa = PBXGroup;
+			children = (
+				70E3D2101FF75E06002CB5CF /* Twin Synergy */,
+				70E3D2281FF75E06002CB5CF /* Twin SynergyTests */,
+				70E3D2331FF75E06002CB5CF /* Twin SynergyUITests */,
+				70E3D20F1FF75E06002CB5CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70E3D20F1FF75E06002CB5CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70E3D20E1FF75E06002CB5CF /* Twin Synergy.app */,
+				70E3D2251FF75E06002CB5CF /* Twin SynergyTests.xctest */,
+				70E3D2301FF75E06002CB5CF /* Twin SynergyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70E3D2101FF75E06002CB5CF /* Twin Synergy */ = {
+			isa = PBXGroup;
+			children = (
+				70E3D24F1FF78FAE002CB5CF /* Structs */,
+				70E3D24A1FF7774E002CB5CF /* Protocals */,
+				70E3D2421FF77231002CB5CF /* Controllers */,
+				70E3D2111FF75E06002CB5CF /* AppDelegate.swift */,
+				70E3D2131FF75E06002CB5CF /* ViewController.swift */,
+				70E3D2151FF75E06002CB5CF /* Main.storyboard */,
+				70E3D21B1FF75E06002CB5CF /* Assets.xcassets */,
+				70E3D21D1FF75E06002CB5CF /* LaunchScreen.storyboard */,
+				70E3D2201FF75E06002CB5CF /* Info.plist */,
+				70E3D2181FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld */,
+			);
+			path = "Twin Synergy";
+			sourceTree = "<group>";
+		};
+		70E3D2281FF75E06002CB5CF /* Twin SynergyTests */ = {
+			isa = PBXGroup;
+			children = (
+				70E3D2291FF75E06002CB5CF /* Twin_SynergyTests.swift */,
+				70E3D22B1FF75E06002CB5CF /* Info.plist */,
+			);
+			path = "Twin SynergyTests";
+			sourceTree = "<group>";
+		};
+		70E3D2331FF75E06002CB5CF /* Twin SynergyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70E3D2341FF75E06002CB5CF /* Twin_SynergyUITests.swift */,
+				70E3D2361FF75E06002CB5CF /* Info.plist */,
+			);
+			path = "Twin SynergyUITests";
+			sourceTree = "<group>";
+		};
+		70E3D2421FF77231002CB5CF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70E3D2431FF7723B002CB5CF /* HomeViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		70E3D2431FF7723B002CB5CF /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70E3D2481FF77294002CB5CF /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		70E3D24A1FF7774E002CB5CF /* Protocals */ = {
+			isa = PBXGroup;
+			children = (
+				70E3D24B1FF7777D002CB5CF /* MyColorProtocal.swift */,
+			);
+			path = Protocals;
+			sourceTree = "<group>";
+		};
+		70E3D24F1FF78FAE002CB5CF /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70E3D20D1FF75E06002CB5CF /* Twin Synergy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E3D2391FF75E06002CB5CF /* Build configuration list for PBXNativeTarget "Twin Synergy" */;
+			buildPhases = (
+				70E3D20A1FF75E06002CB5CF /* Sources */,
+				70E3D20B1FF75E06002CB5CF /* Frameworks */,
+				70E3D20C1FF75E06002CB5CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Twin Synergy";
+			productName = "Twin Synergy";
+			productReference = 70E3D20E1FF75E06002CB5CF /* Twin Synergy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70E3D2241FF75E06002CB5CF /* Twin SynergyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E3D23C1FF75E06002CB5CF /* Build configuration list for PBXNativeTarget "Twin SynergyTests" */;
+			buildPhases = (
+				70E3D2211FF75E06002CB5CF /* Sources */,
+				70E3D2221FF75E06002CB5CF /* Frameworks */,
+				70E3D2231FF75E06002CB5CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70E3D2271FF75E06002CB5CF /* PBXTargetDependency */,
+			);
+			name = "Twin SynergyTests";
+			productName = "Twin SynergyTests";
+			productReference = 70E3D2251FF75E06002CB5CF /* Twin SynergyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70E3D22F1FF75E06002CB5CF /* Twin SynergyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E3D23F1FF75E06002CB5CF /* Build configuration list for PBXNativeTarget "Twin SynergyUITests" */;
+			buildPhases = (
+				70E3D22C1FF75E06002CB5CF /* Sources */,
+				70E3D22D1FF75E06002CB5CF /* Frameworks */,
+				70E3D22E1FF75E06002CB5CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70E3D2321FF75E06002CB5CF /* PBXTargetDependency */,
+			);
+			name = "Twin SynergyUITests";
+			productName = "Twin SynergyUITests";
+			productReference = 70E3D2301FF75E06002CB5CF /* Twin SynergyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70E3D2061FF75E06002CB5CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = SkullTree;
+				TargetAttributes = {
+					70E3D20D1FF75E06002CB5CF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					70E3D2241FF75E06002CB5CF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 70E3D20D1FF75E06002CB5CF;
+					};
+					70E3D22F1FF75E06002CB5CF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 70E3D20D1FF75E06002CB5CF;
+					};
+				};
+			};
+			buildConfigurationList = 70E3D2091FF75E06002CB5CF /* Build configuration list for PBXProject "Twin Synergy" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70E3D2051FF75E06002CB5CF;
+			productRefGroup = 70E3D20F1FF75E06002CB5CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70E3D20D1FF75E06002CB5CF /* Twin Synergy */,
+				70E3D2241FF75E06002CB5CF /* Twin SynergyTests */,
+				70E3D22F1FF75E06002CB5CF /* Twin SynergyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70E3D20C1FF75E06002CB5CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E3D21F1FF75E06002CB5CF /* LaunchScreen.storyboard in Resources */,
+				70E3D21C1FF75E06002CB5CF /* Assets.xcassets in Resources */,
+				70E3D2171FF75E06002CB5CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E3D2231FF75E06002CB5CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E3D22E1FF75E06002CB5CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70E3D20A1FF75E06002CB5CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */,
+				70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */,
+				70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */,
+				70E3D24C1FF7777D002CB5CF /* MyColorProtocal.swift in Sources */,
+				70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */,
+				70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E3D2211FF75E06002CB5CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E3D22A1FF75E06002CB5CF /* Twin_SynergyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E3D22C1FF75E06002CB5CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E3D2351FF75E06002CB5CF /* Twin_SynergyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70E3D2271FF75E06002CB5CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70E3D20D1FF75E06002CB5CF /* Twin Synergy */;
+			targetProxy = 70E3D2261FF75E06002CB5CF /* PBXContainerItemProxy */;
+		};
+		70E3D2321FF75E06002CB5CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70E3D20D1FF75E06002CB5CF /* Twin Synergy */;
+			targetProxy = 70E3D2311FF75E06002CB5CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70E3D2151FF75E06002CB5CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70E3D2161FF75E06002CB5CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70E3D21D1FF75E06002CB5CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70E3D21E1FF75E06002CB5CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70E3D2371FF75E06002CB5CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70E3D2381FF75E06002CB5CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70E3D23A1FF75E06002CB5CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = "Twin Synergy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th.co.twinsynergy.Twin-Synergy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70E3D23B1FF75E06002CB5CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = "Twin Synergy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th.co.twinsynergy.Twin-Synergy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70E3D23D1FF75E06002CB5CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = "Twin SynergyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th.co.twinsynergy.Twin-SynergyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twin Synergy.app/Twin Synergy";
+			};
+			name = Debug;
+		};
+		70E3D23E1FF75E06002CB5CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = "Twin SynergyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th.co.twinsynergy.Twin-SynergyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twin Synergy.app/Twin Synergy";
+			};
+			name = Release;
+		};
+		70E3D2401FF75E06002CB5CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = "Twin SynergyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th.co.twinsynergy.Twin-SynergyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Twin Synergy";
+			};
+			name = Debug;
+		};
+		70E3D2411FF75E06002CB5CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				INFOPLIST_FILE = "Twin SynergyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th.co.twinsynergy.Twin-SynergyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Twin Synergy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70E3D2091FF75E06002CB5CF /* Build configuration list for PBXProject "Twin Synergy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70E3D2371FF75E06002CB5CF /* Debug */,
+				70E3D2381FF75E06002CB5CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70E3D2391FF75E06002CB5CF /* Build configuration list for PBXNativeTarget "Twin Synergy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70E3D23A1FF75E06002CB5CF /* Debug */,
+				70E3D23B1FF75E06002CB5CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70E3D23C1FF75E06002CB5CF /* Build configuration list for PBXNativeTarget "Twin SynergyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70E3D23D1FF75E06002CB5CF /* Debug */,
+				70E3D23E1FF75E06002CB5CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70E3D23F1FF75E06002CB5CF /* Build configuration list for PBXNativeTarget "Twin SynergyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70E3D2401FF75E06002CB5CF /* Debug */,
+				70E3D2411FF75E06002CB5CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		70E3D2181FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				70E3D2191FF75E06002CB5CF /* Twin_Synergy.xcdatamodel */,
+			);
+			currentVersion = 70E3D2191FF75E06002CB5CF /* Twin_Synergy.xcdatamodel */;
+			path = Twin_Synergy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 70E3D2061FF75E06002CB5CF /* Project object */;
+}
