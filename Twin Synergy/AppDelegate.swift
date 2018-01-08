@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MyColorProtocal {
         UIApplication.shared.statusBarStyle = .lightContent
         UITabBar.appearance().tintColor = hexStringToUIColor(hex: "#FF8A00")
         UITabBar.appearance().barTintColor = hexStringToUIColor(hex: "#356A97")
+        
         if #available(iOS 10.0, *) {
             UITabBar.appearance().unselectedItemTintColor = UIColor.white
         } else {
