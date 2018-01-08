@@ -1,15 +1,16 @@
 //
-//  Twin_SynergyTests.swift
+//  MyColorProtocalTests.swift
 //  Twin SynergyTests
 //
-//  Created by SkullTree on 30/12/2560 BE.
-//  Copyright © 2560 SkullTree. All rights reserved.
+//  Created by SkullTree on 8/1/2561 BE.
+//  Copyright © 2561 SkullTree. All rights reserved.
 //
 
 import XCTest
 @testable import Twin_Synergy
 
-class Twin_SynergyTests: XCTestCase {
+class MyColorProtocolTests: XCTestCase {
+    
     
     override func setUp() {
         super.setUp()
@@ -31,6 +32,11 @@ class Twin_SynergyTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func getBasedColorTest() {
+        //let basedColor = MyColorProtocol.getBasedColor()
+        //XCTAssertEqual(basedColor, "FF8A00","is Ok")
     }
     
 }

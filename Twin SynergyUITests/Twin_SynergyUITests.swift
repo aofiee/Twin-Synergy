@@ -7,7 +7,6 @@
 //
 
 import XCTest
-
 class Twin_SynergyUITests: XCTestCase {
         
     override func setUp() {

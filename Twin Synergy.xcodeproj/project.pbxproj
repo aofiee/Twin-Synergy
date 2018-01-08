@@ -17,11 +17,11 @@
 		70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2181FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld */; };
 		70E3D21C1FF75E06002CB5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E3D21B1FF75E06002CB5CF /* Assets.xcassets */; };
 		70E3D21F1FF75E06002CB5CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E3D21D1FF75E06002CB5CF /* LaunchScreen.storyboard */; };
-		70E3D22A1FF75E06002CB5CF /* Twin_SynergyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2291FF75E06002CB5CF /* Twin_SynergyTests.swift */; };
 		70E3D2351FF75E06002CB5CF /* Twin_SynergyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2341FF75E06002CB5CF /* Twin_SynergyUITests.swift */; };
 		70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2481FF77294002CB5CF /* HomeViewController.swift */; };
-		70E3D24C1FF7777D002CB5CF /* MyColorProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D24B1FF7777D002CB5CF /* MyColorProtocal.swift */; };
 		70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */; };
+		70E62E5F200324AE002C72A4 /* MyColorProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E62E5E200324AE002C72A4 /* MyColorProtocolTests.swift */; };
+		70E62E6220032571002C72A4 /* MyColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E62E6120032571002C72A4 /* MyColorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +55,14 @@
 		70E3D21E1FF75E06002CB5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70E3D2201FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3D2251FF75E06002CB5CF /* Twin SynergyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twin SynergyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		70E3D2291FF75E06002CB5CF /* Twin_SynergyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twin_SynergyTests.swift; sourceTree = "<group>"; };
 		70E3D22B1FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3D2301FF75E06002CB5CF /* Twin SynergyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twin SynergyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3D2341FF75E06002CB5CF /* Twin_SynergyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twin_SynergyUITests.swift; sourceTree = "<group>"; };
 		70E3D2361FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3D2481FF77294002CB5CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		70E3D24B1FF7777D002CB5CF /* MyColorProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorProtocal.swift; sourceTree = "<group>"; };
 		70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		70E62E5E200324AE002C72A4 /* MyColorProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorProtocolTests.swift; sourceTree = "<group>"; };
+		70E62E6120032571002C72A4 /* MyColorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				70E3D24F1FF78FAE002CB5CF /* Class */,
-				70E3D24A1FF7774E002CB5CF /* Protocals */,
+				70E3D24A1FF7774E002CB5CF /* Protocols */,
 				70E3D2421FF77231002CB5CF /* Controllers */,
 				70E3D2111FF75E06002CB5CF /* AppDelegate.swift */,
 				70E3D2131FF75E06002CB5CF /* ViewController.swift */,
@@ -164,8 +164,8 @@
 		70E3D2281FF75E06002CB5CF /* Twin SynergyTests */ = {
 			isa = PBXGroup;
 			children = (
-				70E3D2291FF75E06002CB5CF /* Twin_SynergyTests.swift */,
 				70E3D22B1FF75E06002CB5CF /* Info.plist */,
+				70E62E5E200324AE002C72A4 /* MyColorProtocolTests.swift */,
 			);
 			path = "Twin SynergyTests";
 			sourceTree = "<group>";
@@ -198,12 +198,12 @@
 			path = HomeViewController;
 			sourceTree = "<group>";
 		};
-		70E3D24A1FF7774E002CB5CF /* Protocals */ = {
+		70E3D24A1FF7774E002CB5CF /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				70E3D24B1FF7777D002CB5CF /* MyColorProtocal.swift */,
+				70E62E6120032571002C72A4 /* MyColorProtocol.swift */,
 			);
-			path = Protocals;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		70E3D24F1FF78FAE002CB5CF /* Class */ = {
@@ -286,6 +286,7 @@
 					};
 					70E3D2241FF75E06002CB5CF = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 70E3D20D1FF75E06002CB5CF;
 					};
@@ -349,10 +350,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */,
+				70E62E6220032571002C72A4 /* MyColorProtocol.swift in Sources */,
 				70C39AAF1FF7FF590055464A /* mainMenuViewController.swift in Sources */,
 				70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */,
 				70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */,
-				70E3D24C1FF7777D002CB5CF /* MyColorProtocal.swift in Sources */,
 				70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */,
 				70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */,
 				70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */,
@@ -364,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70E3D22A1FF75E06002CB5CF /* Twin_SynergyTests.swift in Sources */,
+				70E62E5F200324AE002C72A4 /* MyColorProtocolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,12 +554,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57RNBV4CEC;
 				INFOPLIST_FILE = "Twin SynergyTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "th.co.twinsynergy.Twin-SynergyTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twin Synergy.app/Twin Synergy";
@@ -570,6 +573,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57RNBV4CEC;
 				INFOPLIST_FILE = "Twin SynergyTests/Info.plist";

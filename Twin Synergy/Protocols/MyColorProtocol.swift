@@ -1,5 +1,5 @@
 //
-//  MyColorProtocal.swift
+//  MyColorProtocol.swift
 //  Twin Synergy
 //
 //  Created by SkullTree on 30/12/2560 BE.
@@ -9,11 +9,12 @@
 import Foundation
 import UIKit
 
-protocol MyColorProtocal {
+protocol MyColorProtocol {
     func hexStringToUIColor (hex:String) -> UIColor
+    var basedColor: String { get set }
 }
 
-extension MyColorProtocal {
+extension MyColorProtocol {
     func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
@@ -37,3 +38,4 @@ extension MyColorProtocal {
     }
     
 }
+
