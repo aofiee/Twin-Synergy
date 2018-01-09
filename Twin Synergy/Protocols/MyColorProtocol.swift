@@ -11,10 +11,17 @@ import UIKit
 
 protocol MyColorProtocol {
     func hexStringToUIColor (hex:String) -> UIColor
+    func hexStringToUIColor2 (hex:String) -> UIColor
     var basedColor: String { get set }
+    var basedBarColor: String { get set }
+    var secondBarColor: String { get set }
+    var titleColor: String { get set }
 }
 
 extension MyColorProtocol {
+    func hexStringToUIColor2 (hex:String) -> UIColor {
+        return UIColor.black
+    }
     func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         

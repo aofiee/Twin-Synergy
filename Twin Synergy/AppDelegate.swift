@@ -11,24 +11,27 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, MyColorProtocol {
-
+    var basedColor: String = "#FF8A00"
+    var basedBarColor: String = "#356A97"
+    var secondBarColor: String = "#17274E"
+    var titleColor: String = "#FFFFFF"
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UIApplication.shared.statusBarStyle = .lightContent
-        UITabBar.appearance().tintColor = hexStringToUIColor(hex: "#FF8A00")
-        UITabBar.appearance().barTintColor = hexStringToUIColor(hex: "#356A97")
+        UITabBar.appearance().tintColor = hexStringToUIColor(hex: basedColor)
+        UITabBar.appearance().barTintColor = hexStringToUIColor(hex: basedBarColor)
         
         if #available(iOS 10.0, *) {
             UITabBar.appearance().unselectedItemTintColor = UIColor.white
         } else {
             // Fallback on earlier versions
         }
-        UINavigationBar.appearance().barTintColor = hexStringToUIColor(hex: "#17274E")
-        UINavigationBar.appearance().tintColor = hexStringToUIColor(hex: "#ffffff")
+        UINavigationBar.appearance().barTintColor = hexStringToUIColor(hex: secondBarColor)
+        UINavigationBar.appearance().tintColor = hexStringToUIColor(hex: titleColor)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
-        UIButton.appearance().setTitleColor(hexStringToUIColor(hex: "#ffffff"), for: [])
+        UIButton.appearance().setTitleColor(hexStringToUIColor(hex: titleColor), for: [])
         return true
     }
 

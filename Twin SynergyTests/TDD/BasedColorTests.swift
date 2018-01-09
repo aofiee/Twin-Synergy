@@ -1,17 +1,15 @@
 //
-//  MyColorProtocalTests.swift
+//  BasedColorTests.swift
 //  Twin SynergyTests
 //
-//  Created by SkullTree on 8/1/2561 BE.
+//  Created by SkullTree on 9/1/2561 BE.
 //  Copyright © 2561 SkullTree. All rights reserved.
 //
 
 import XCTest
 @testable import Twin_Synergy
-
-class MyColorProtocolTests: XCTestCase {
-    
-    
+class BasedColorTests: XCTestCase {
+    let basedColor = BasedColor()
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -34,9 +32,10 @@ class MyColorProtocolTests: XCTestCase {
         }
     }
     
-    func getBasedColorTest() {
-        //let basedColor = MyColorProtocol.getBasedColor()
-        //XCTAssertEqual(basedColor, "FF8A00","is Ok")
+    func hexStringToUIColor2_Test(){
+        let colorTest = basedColor.hexStringToUIColor2(hex: "#FFFFFF")
+        print(colorTest)
+        XCTAssertEqual(UIColor.red, UIColor.black,"Test Hex Color To UIColor")
     }
     
 }
