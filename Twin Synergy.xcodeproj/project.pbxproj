@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		70158AA820032C1C00EF1BF2 /* CustomNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70158AA720032C1C00EF1BF2 /* CustomNavigationControllerTests.swift */; };
-		70372A002004599000E5EFF7 /* BasedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703729FF2004599000E5EFF7 /* BasedColor.swift */; };
-		70372A0220045B1B00E5EFF7 /* BasedColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70372A0120045B1B00E5EFF7 /* BasedColorTests.swift */; };
+		7048393E200465E600E74C93 /* MyColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048393D200465E600E74C93 /* MyColorStruct.swift */; };
+		708CE7D12005E5C5004FD874 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */; };
+		708CE7D32005EB61004FD874 /* ProfileViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */; };
 		70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA21FF7DFE70055464A /* ProfileViewController.swift */; };
 		70C39AA61FF7E4110055464A /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA51FF7E4110055464A /* mapViewController.swift */; };
 		70C39AA91FF7EBC70055464A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C39AA81FF7EBC70055464A /* MessageUI.framework */; };
 		70C39AAF1FF7FF590055464A /* mainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AAE1FF7FF590055464A /* mainMenuViewController.swift */; };
+		70C57A5D20046207002BC17F /* MyColorStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C57A5C20046207002BC17F /* MyColorStructTests.swift */; };
 		70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2111FF75E06002CB5CF /* AppDelegate.swift */; };
 		70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2131FF75E06002CB5CF /* ViewController.swift */; };
 		70E3D2171FF75E06002CB5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E3D2151FF75E06002CB5CF /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		70E3D2351FF75E06002CB5CF /* Twin_SynergyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2341FF75E06002CB5CF /* Twin_SynergyUITests.swift */; };
 		70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2481FF77294002CB5CF /* HomeViewController.swift */; };
 		70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */; };
-		70E62E6220032571002C72A4 /* MyColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E62E6120032571002C72A4 /* MyColorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		70158AA720032C1C00EF1BF2 /* CustomNavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllerTests.swift; sourceTree = "<group>"; };
-		703729FF2004599000E5EFF7 /* BasedColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasedColor.swift; sourceTree = "<group>"; };
-		70372A0120045B1B00E5EFF7 /* BasedColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasedColorTests.swift; sourceTree = "<group>"; };
+		7048393D200465E600E74C93 /* MyColorStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorStruct.swift; sourceTree = "<group>"; };
+		708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerTest.swift; sourceTree = "<group>"; };
 		70C39AA21FF7DFE70055464A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		70C39AA51FF7E4110055464A /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		70C39AA81FF7EBC70055464A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		70C39AAE1FF7FF590055464A /* mainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMenuViewController.swift; sourceTree = "<group>"; };
+		70C57A5C20046207002BC17F /* MyColorStructTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorStructTests.swift; sourceTree = "<group>"; };
 		70E3D20E1FF75E06002CB5CF /* Twin Synergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twin Synergy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3D2111FF75E06002CB5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70E3D2131FF75E06002CB5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		70E3D2361FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3D2481FF77294002CB5CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
-		70E62E6120032571002C72A4 /* MyColorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,9 @@
 		7035F7C0200352550003EDAF /* TDD */ = {
 			isa = PBXGroup;
 			children = (
-				70158AA720032C1C00EF1BF2 /* CustomNavigationControllerTests.swift */,
-				70372A0120045B1B00E5EFF7 /* BasedColorTests.swift */,
+				70C57A5C20046207002BC17F /* MyColorStructTests.swift */,
+				708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */,
+				708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -161,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				70E3D24F1FF78FAE002CB5CF /* Class */,
-				70E3D24A1FF7774E002CB5CF /* Protocols */,
+				70E3D24A1FF7774E002CB5CF /* Struct */,
 				70E3D2421FF77231002CB5CF /* Controllers */,
 				70E3D2111FF75E06002CB5CF /* AppDelegate.swift */,
 				70E3D2131FF75E06002CB5CF /* ViewController.swift */,
@@ -211,19 +212,18 @@
 			path = HomeViewController;
 			sourceTree = "<group>";
 		};
-		70E3D24A1FF7774E002CB5CF /* Protocols */ = {
+		70E3D24A1FF7774E002CB5CF /* Struct */ = {
 			isa = PBXGroup;
 			children = (
-				70E62E6120032571002C72A4 /* MyColorProtocol.swift */,
+				7048393D200465E600E74C93 /* MyColorStruct.swift */,
 			);
-			path = Protocols;
+			path = Struct;
 			sourceTree = "<group>";
 		};
 		70E3D24F1FF78FAE002CB5CF /* Class */ = {
 			isa = PBXGroup;
 			children = (
 				70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */,
-				703729FF2004599000E5EFF7 /* BasedColor.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -363,12 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7048393E200465E600E74C93 /* MyColorStruct.swift in Sources */,
 				70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */,
-				70E62E6220032571002C72A4 /* MyColorProtocol.swift in Sources */,
 				70C39AAF1FF7FF590055464A /* mainMenuViewController.swift in Sources */,
 				70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */,
 				70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */,
-				70372A002004599000E5EFF7 /* BasedColor.swift in Sources */,
 				70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */,
 				70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */,
 				70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */,
@@ -380,8 +379,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70158AA820032C1C00EF1BF2 /* CustomNavigationControllerTests.swift in Sources */,
-				70372A0220045B1B00E5EFF7 /* BasedColorTests.swift in Sources */,
+				708CE7D12005E5C5004FD874 /* ViewControllerTests.swift in Sources */,
+				70C57A5D20046207002BC17F /* MyColorStructTests.swift in Sources */,
+				708CE7D32005EB61004FD874 /* ProfileViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

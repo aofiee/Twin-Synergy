@@ -10,28 +10,25 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, MyColorProtocol {
-    var basedColor: String = "#FF8A00"
-    var basedBarColor: String = "#356A97"
-    var secondBarColor: String = "#17274E"
-    var titleColor: String = "#FFFFFF"
+class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    let myColor = MyColorStruct(basedColor: "#FF8A00", basedBarColor: "#356A97", secondBarColor: "#17274E", titleColor: "#FFFFFF")
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UIApplication.shared.statusBarStyle = .lightContent
-        UITabBar.appearance().tintColor = hexStringToUIColor(hex: basedColor)
-        UITabBar.appearance().barTintColor = hexStringToUIColor(hex: basedBarColor)
+        UITabBar.appearance().tintColor = myColor.hexStringToUIColor(hex: myColor.basedColor)
+        UITabBar.appearance().barTintColor = myColor.hexStringToUIColor(hex: myColor.basedBarColor)
         
         if #available(iOS 10.0, *) {
             UITabBar.appearance().unselectedItemTintColor = UIColor.white
         } else {
             // Fallback on earlier versions
         }
-        UINavigationBar.appearance().barTintColor = hexStringToUIColor(hex: secondBarColor)
-        UINavigationBar.appearance().tintColor = hexStringToUIColor(hex: titleColor)
+        UINavigationBar.appearance().barTintColor = myColor.hexStringToUIColor(hex: myColor.secondBarColor)
+        UINavigationBar.appearance().tintColor = myColor.hexStringToUIColor(hex: myColor.titleColor)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
-        UIButton.appearance().setTitleColor(hexStringToUIColor(hex: titleColor), for: [])
+        UIButton.appearance().setTitleColor(myColor.hexStringToUIColor(hex: myColor.titleColor), for: [])
         return true
     }
 

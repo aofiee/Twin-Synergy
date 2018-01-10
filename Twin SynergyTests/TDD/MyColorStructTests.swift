@@ -1,5 +1,5 @@
 //
-//  BasedColorTests.swift
+//  MyColorStruct.swift
 //  Twin SynergyTests
 //
 //  Created by SkullTree on 9/1/2561 BE.
@@ -8,8 +8,8 @@
 
 import XCTest
 @testable import Twin_Synergy
-class BasedColorTests: XCTestCase {
-    let basedColor = BasedColor()
+class MyColorStructTests: XCTestCase {
+    let myColor = MyColorStruct(basedColor: "#FF8A00", basedBarColor: "#356A97", secondBarColor: "#17274E", titleColor: "#FFFFFF")
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -32,10 +32,22 @@ class BasedColorTests: XCTestCase {
         }
     }
     
-    func hexStringToUIColor2_Test(){
-        let colorTest = basedColor.hexStringToUIColor2(hex: "#FFFFFF")
-        print(colorTest)
-        XCTAssertEqual(UIColor.red, UIColor.black,"Test Hex Color To UIColor")
+    func testBasedColor(){
+        XCTAssertEqual(myColor.basedColor, "#FF8A00", "should set #FF8A00")
     }
     
+    func testBasedBarColor(){
+        XCTAssertEqual(myColor.basedBarColor, "#356A97", "should set #356A97")
+    }
+    func testSecondBarColor(){
+        XCTAssertEqual(myColor.secondBarColor, "#17274E", "should set #17274E")
+    }
+    func testTitleColor(){
+        XCTAssertEqual(myColor.titleColor, "#FFFFFF", "should set #FFFFFF")
+    }
+    func testHexToUIColor(){
+        let myUIColor = myColor.hexStringToUIColor(hex: "#FFFFFF")
+        let myUIColor2 = myColor.hexStringToUIColor(hex: "#FFFFFF")
+        XCTAssertEqual(myUIColor, myUIColor2,"Test Same Color")
+    }
 }

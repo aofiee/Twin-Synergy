@@ -8,19 +8,23 @@
 
 import Foundation
 import UIKit
-
-protocol MyColorProtocol {
-    func hexStringToUIColor (hex:String) -> UIColor
-    func hexStringToUIColor2 (hex:String) -> UIColor
-    var basedColor: String { get set }
-    var basedBarColor: String { get set }
-    var secondBarColor: String { get set }
-    var titleColor: String { get set }
-}
-
-extension MyColorProtocol {
-    func hexStringToUIColor2 (hex:String) -> UIColor {
-        return UIColor.black
+struct MyColorStruct {
+    let basedColor: String
+    let basedBarColor: String
+    let secondBarColor: String
+    let titleColor: String
+    init(basedColor: String,
+         basedBarColor: String,
+         secondBarColor: String,
+         titleColor: String) {
+        //        let basedColor: String = "#FF8A00"
+        //        let basedBarColor: String = "#356A97"
+        //        let secondBarColor: String = "#17274E"
+        //        let titleColor: String = "#FFFFFF"
+        self.basedColor = basedColor
+        self.basedBarColor = basedBarColor
+        self.secondBarColor = secondBarColor
+        self.titleColor = titleColor
     }
     func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
@@ -43,6 +47,5 @@ extension MyColorProtocol {
             alpha: CGFloat(1.0)
         )
     }
-    
 }
 
