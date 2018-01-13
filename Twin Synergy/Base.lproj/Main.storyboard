@@ -123,13 +123,58 @@ for website and mobile application. </string>
                                     <action selector="closeTapped:" destination="XG1-G0-bR8" eventType="touchUpInside" id="w0m-uq-KSm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xle-e3-0Pn">
+                                <rect key="frame" x="145.5" y="318" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="Lo1-ML-pmQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="TfJ-No-qXE"/>
+                                </constraints>
+                                <state key="normal" title="PORTFOLIO">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="portfolioBtnTapped:" destination="XG1-G0-bR8" eventType="touchUpInside" id="aj5-8D-GSH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9a-fE-n94">
+                                <rect key="frame" x="165.5" y="265" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="SiX-lu-SqK"/>
+                                    <constraint firstAttribute="height" constant="30" id="qKl-gn-Oe5"/>
+                                </constraints>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeBtnTapped:" destination="XG1-G0-bR8" eventType="touchUpInside" id="HZ4-NJ-Lzh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSp-JF-5O1">
+                                <rect key="frame" x="152.5" y="371" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VWF-Xg-UWL"/>
+                                    <constraint firstAttribute="width" constant="70" id="fu4-is-lfB"/>
+                                </constraints>
+                                <state key="normal" title="CONTACT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactBtnTapped:" destination="XG1-G0-bR8" eventType="touchUpInside" id="MNq-6z-vME"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="O9a-fE-n94" firstAttribute="centerX" secondItem="PtZ-mK-AJD" secondAttribute="centerX" id="0i4-0l-bGO"/>
                             <constraint firstItem="PJT-cl-HAv" firstAttribute="trailing" secondItem="Exe-S1-Z1P" secondAttribute="trailing" id="3cX-8v-ILb"/>
+                            <constraint firstItem="Xle-e3-0Pn" firstAttribute="centerY" secondItem="PtZ-mK-AJD" secondAttribute="centerY" id="7KD-dY-rPA"/>
                             <constraint firstItem="cjf-K3-sq0" firstAttribute="top" secondItem="Exe-S1-Z1P" secondAttribute="top" id="7TM-2P-sgF"/>
                             <constraint firstItem="PJT-cl-HAv" firstAttribute="bottom" secondItem="Exe-S1-Z1P" secondAttribute="bottom" id="M9U-j5-tBe"/>
+                            <constraint firstItem="SSp-JF-5O1" firstAttribute="centerX" secondItem="PtZ-mK-AJD" secondAttribute="centerX" id="MEW-1Q-wws"/>
+                            <constraint firstItem="Xle-e3-0Pn" firstAttribute="top" secondItem="O9a-fE-n94" secondAttribute="bottom" constant="23" id="gtw-ly-gWd"/>
+                            <constraint firstItem="Xle-e3-0Pn" firstAttribute="centerX" secondItem="PtZ-mK-AJD" secondAttribute="centerX" id="kBW-Fl-fNA"/>
                             <constraint firstItem="PJT-cl-HAv" firstAttribute="top" secondItem="PtZ-mK-AJD" secondAttribute="top" id="tk8-zf-loT"/>
+                            <constraint firstItem="SSp-JF-5O1" firstAttribute="top" secondItem="Xle-e3-0Pn" secondAttribute="bottom" constant="23" id="ufW-A6-YxY"/>
                             <constraint firstItem="PJT-cl-HAv" firstAttribute="leading" secondItem="Exe-S1-Z1P" secondAttribute="leading" id="wEB-5A-qvB"/>
                             <constraint firstItem="Exe-S1-Z1P" firstAttribute="trailing" secondItem="cjf-K3-sq0" secondAttribute="trailing" constant="16" id="wZ7-im-VOR"/>
                         </constraints>
