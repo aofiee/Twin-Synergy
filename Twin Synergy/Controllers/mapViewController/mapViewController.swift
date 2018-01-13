@@ -20,6 +20,13 @@ class mapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
                         Suan-Luang bangkok 10250
                        """
     
+    @IBAction func getDirection(_ sender: UIButton) {
+        let placeMark = MKPlacemark(coordinate: CLLocationCoordinate2DMake(CLLocationDegrees(mapViewModel.lat), CLLocationDegrees(mapViewModel.lng)))
+        let mapItem = MKMapItem(placemark: placeMark)
+        mapItem.name = "Twin Synergy Co., Ltd."
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
+        mapItem.openInMaps(launchOptions: launchOptions)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMapView()
@@ -41,6 +48,7 @@ class mapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         annotation.subtitle = mapViewModel.address
         annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(mapViewModel.lat), longitude: CLLocationDegrees(mapViewModel.lng))
         mapView.addAnnotation(annotation)
+        
     }
 
     override func didReceiveMemoryWarning() {
