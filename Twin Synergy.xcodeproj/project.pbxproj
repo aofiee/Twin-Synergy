@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7048393E200465E600E74C93 /* MyColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048393D200465E600E74C93 /* MyColorStruct.swift */; };
+		70557BC72008B6E000198227 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70557BC62008B6E000198227 /* ProfileModel.swift */; };
+		70557BC92008B6EF00198227 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70557BC82008B6EF00198227 /* ProfileViewModel.swift */; };
 		708CE7D12005E5C5004FD874 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */; };
 		708CE7D32005EB61004FD874 /* ProfileViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */; };
 		70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA21FF7DFE70055464A /* ProfileViewController.swift */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		7048393D200465E600E74C93 /* MyColorStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorStruct.swift; sourceTree = "<group>"; };
+		70557BC62008B6E000198227 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		70557BC82008B6EF00198227 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerTest.swift; sourceTree = "<group>"; };
 		70C39AA21FF7DFE70055464A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,22 @@
 			path = TDD;
 			sourceTree = "<group>";
 		};
+		70557BC42008B5CD00198227 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				70557BC82008B6EF00198227 /* ProfileViewModel.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		70557BC52008B5DB00198227 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70557BC62008B6E000198227 /* ProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		70C39AA11FF7DFCC0055464A /* ProfileViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +181,8 @@
 		70E3D2101FF75E06002CB5CF /* Twin Synergy */ = {
 			isa = PBXGroup;
 			children = (
+				70557BC52008B5DB00198227 /* Model */,
+				70557BC42008B5CD00198227 /* ModelView */,
 				70E3D24F1FF78FAE002CB5CF /* Class */,
 				70E3D24A1FF7774E002CB5CF /* Struct */,
 				70E3D2421FF77231002CB5CF /* Controllers */,
@@ -365,9 +387,11 @@
 			files = (
 				7048393E200465E600E74C93 /* MyColorStruct.swift in Sources */,
 				70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */,
+				70557BC92008B6EF00198227 /* ProfileViewModel.swift in Sources */,
 				70C39AAF1FF7FF590055464A /* mainMenuViewController.swift in Sources */,
 				70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */,
 				70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */,
+				70557BC72008B6E000198227 /* ProfileModel.swift in Sources */,
 				70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */,
 				70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */,
 				70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */,

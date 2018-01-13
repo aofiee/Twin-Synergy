@@ -47,5 +47,6 @@ struct MyColorStruct {
             alpha: CGFloat(1.0)
         )
     }
+    
 }
 

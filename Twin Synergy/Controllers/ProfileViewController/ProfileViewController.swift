@@ -10,18 +10,22 @@ import UIKit
 import MessageUI
 
 class ProfileViewController: CustomNavigationController,MFMailComposeViewControllerDelegate {
-    let emailTo = "info@twinsynergy.co.th"
-    let contactTelephoneNumber = "+66925905444"
-    let titleEmail = "q-o-o-p"
-    let emailDetail = """
-    This message send from \"Twin Synergy\" iOS Application.
-    """
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var telephoneLabel: UILabel!
     @IBOutlet var emailMeLabel: UILabel!
-    
+    private var profile: ProfileViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let mAddress = """
+                        Twin synergy Co.,Ltd.
+                        1,3 Soi 4 Seri Village 8  Suan-Luang
+                        Suan-Luang bangkok 10250
+                       """
+        self.profile = ProfileViewModel(mProfile: ProfileModel(address: mAddress, telephone: "+66925905444", email: "khomkrid@twinsynergy.co.th"))
+        addressLabel.text = self.profile.address
+        telephoneLabel.text = self.profile.telephone
+        emailMeLabel.text = self.profile.email
+        
         let tapGestureForAddress = UITapGestureRecognizer(target: self, action: #selector(mapHandleTap(sender:)))
         addressLabel.addGestureRecognizer(tapGestureForAddress)
         
@@ -40,9 +44,9 @@ class ProfileViewController: CustomNavigationController,MFMailComposeViewControl
         }
         let composeVC = MFMailComposeViewController()
         composeVC.mailComposeDelegate = self
-        composeVC.setToRecipients([emailTo])
-        composeVC.setSubject(titleEmail)
-        composeVC.setMessageBody(emailDetail, isHTML: false)
+        composeVC.setToRecipients([self.profile.emailTo])
+        composeVC.setSubject(self.profile.titleEmail)
+        composeVC.setMessageBody(self.profile.emailDetail, isHTML: false)
         present(composeVC, animated: true, completion: nil)
     }
     
@@ -52,7 +56,7 @@ class ProfileViewController: CustomNavigationController,MFMailComposeViewControl
     
     @IBAction func telephoneHandleTap(sender: UITapGestureRecognizer) {
         guard ((sender.view as? UILabel)?.text) != nil else { return }
-        if let url = URL(string: "tel://\(contactTelephoneNumber)"), UIApplication.shared.canOpenURL(url) {
+        if let url = URL(string: "tel://\(self.profile.contactTelephoneNumber)"), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10, *) {
                 UIApplication.shared.open(url)
             } else {
