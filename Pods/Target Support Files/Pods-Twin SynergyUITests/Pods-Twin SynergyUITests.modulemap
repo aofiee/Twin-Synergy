@@ -1,6 +1,0 @@
-framework module Pods_Twin_SynergyUITests {
-  umbrella header "Pods-Twin SynergyUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
