@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B755EAFF6515D2D06ADFAD9 /* Pods_Twin_Synergy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520E01D78A953AA1E3DD1EC3 /* Pods_Twin_Synergy.framework */; };
+		48A4FC0EAD2A767CAD770120 /* Pods_Twin_SynergyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3E533111181D6D622B0CCB /* Pods_Twin_SynergyUITests.framework */; };
 		7048393E200465E600E74C93 /* MyColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048393D200465E600E74C93 /* MyColorStruct.swift */; };
 		70557BC72008B6E000198227 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70557BC62008B6E000198227 /* ProfileModel.swift */; };
 		70557BC92008B6EF00198227 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70557BC82008B6EF00198227 /* ProfileViewModel.swift */; };
+		70557BCB2009DFE400198227 /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70557BCA2009DFE400198227 /* MapViewControllerTests.swift */; };
+		70557BCD2009EA2F00198227 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70557BCC2009EA2F00198227 /* MapModel.swift */; };
+		70557BCF2009ED4500198227 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70557BCE2009ED4500198227 /* MapViewModel.swift */; };
 		708CE7D12005E5C5004FD874 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */; };
 		708CE7D32005EB61004FD874 /* ProfileViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */; };
 		70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA21FF7DFE70055464A /* ProfileViewController.swift */; };
@@ -26,6 +31,7 @@
 		70E3D2351FF75E06002CB5CF /* Twin_SynergyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2341FF75E06002CB5CF /* Twin_SynergyUITests.swift */; };
 		70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2481FF77294002CB5CF /* HomeViewController.swift */; };
 		70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */; };
+		D7FC2B77E1834A59371B833E /* Pods_Twin_SynergyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749BC36A818C0B9373B6F4C5 /* Pods_Twin_SynergyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +52,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00461701A4304F262242360A /* Pods-Twin SynergyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin SynergyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twin SynergyTests/Pods-Twin SynergyTests.release.xcconfig"; sourceTree = "<group>"; };
+		084F4E7C3B194325FFB11E33 /* Pods-Twin SynergyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin SynergyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twin SynergyUITests/Pods-Twin SynergyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FAFB2021FA5C2946F0728E5 /* Pods-Twin SynergyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin SynergyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twin SynergyTests/Pods-Twin SynergyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		297E2F55FDC09B03F6F75A03 /* Pods-Twin Synergy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin Synergy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy.debug.xcconfig"; sourceTree = "<group>"; };
+		4D950B4039C55726391F2BF8 /* Pods-Twin Synergy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin Synergy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy.release.xcconfig"; sourceTree = "<group>"; };
+		520E01D78A953AA1E3DD1EC3 /* Pods_Twin_Synergy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_Synergy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DCEDC6BE93BD5932B3DD7E /* Pods-Twin SynergyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin SynergyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twin SynergyUITests/Pods-Twin SynergyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7048393D200465E600E74C93 /* MyColorStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorStruct.swift; sourceTree = "<group>"; };
 		70557BC62008B6E000198227 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		70557BC82008B6EF00198227 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		70557BCA2009DFE400198227 /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
+		70557BCC2009EA2F00198227 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		70557BCE2009ED4500198227 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerTest.swift; sourceTree = "<group>"; };
 		70C39AA21FF7DFE70055464A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +87,8 @@
 		70E3D2361FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3D2481FF77294002CB5CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		749BC36A818C0B9373B6F4C5 /* Pods_Twin_SynergyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_SynergyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3E533111181D6D622B0CCB /* Pods_Twin_SynergyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_SynergyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70C39AA91FF7EBC70055464A /* MessageUI.framework in Frameworks */,
+				0B755EAFF6515D2D06ADFAD9 /* Pods_Twin_Synergy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7FC2B77E1834A59371B833E /* Pods_Twin_SynergyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,34 +113,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A4FC0EAD2A767CAD770120 /* Pods_Twin_SynergyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052B77AB97A1A053A059FB75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				297E2F55FDC09B03F6F75A03 /* Pods-Twin Synergy.debug.xcconfig */,
+				4D950B4039C55726391F2BF8 /* Pods-Twin Synergy.release.xcconfig */,
+				0FAFB2021FA5C2946F0728E5 /* Pods-Twin SynergyTests.debug.xcconfig */,
+				00461701A4304F262242360A /* Pods-Twin SynergyTests.release.xcconfig */,
+				084F4E7C3B194325FFB11E33 /* Pods-Twin SynergyUITests.debug.xcconfig */,
+				68DCEDC6BE93BD5932B3DD7E /* Pods-Twin SynergyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7035F7C0200352550003EDAF /* TDD */ = {
 			isa = PBXGroup;
 			children = (
 				70C57A5C20046207002BC17F /* MyColorStructTests.swift */,
 				708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */,
 				708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */,
+				70557BCA2009DFE400198227 /* MapViewControllerTests.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
 		};
-		70557BC42008B5CD00198227 /* ModelView */ = {
+		70557BC42008B5CD00198227 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				70557BC82008B6EF00198227 /* ProfileViewModel.swift */,
+				70557BCE2009ED4500198227 /* MapViewModel.swift */,
 			);
-			path = ModelView;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		70557BC52008B5DB00198227 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				70557BC62008B6E000198227 /* ProfileModel.swift */,
+				70557BCC2009EA2F00198227 /* MapModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				70C39AA81FF7EBC70055464A /* MessageUI.framework */,
+				520E01D78A953AA1E3DD1EC3 /* Pods_Twin_Synergy.framework */,
+				749BC36A818C0B9373B6F4C5 /* Pods_Twin_SynergyTests.framework */,
+				9D3E533111181D6D622B0CCB /* Pods_Twin_SynergyUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +205,7 @@
 				70E3D2331FF75E06002CB5CF /* Twin SynergyUITests */,
 				70E3D20F1FF75E06002CB5CF /* Products */,
 				70C39AA71FF7EBC70055464A /* Frameworks */,
+				052B77AB97A1A053A059FB75 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,7 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				70557BC52008B5DB00198227 /* Model */,
-				70557BC42008B5CD00198227 /* ModelView */,
+				70557BC42008B5CD00198227 /* ViewModel */,
 				70E3D24F1FF78FAE002CB5CF /* Class */,
 				70E3D24A1FF7774E002CB5CF /* Struct */,
 				70E3D2421FF77231002CB5CF /* Controllers */,
@@ -257,9 +298,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70E3D2391FF75E06002CB5CF /* Build configuration list for PBXNativeTarget "Twin Synergy" */;
 			buildPhases = (
+				D3152BBE04C589DCAFA42447 /* [CP] Check Pods Manifest.lock */,
 				70E3D20A1FF75E06002CB5CF /* Sources */,
 				70E3D20B1FF75E06002CB5CF /* Frameworks */,
 				70E3D20C1FF75E06002CB5CF /* Resources */,
+				631EF351D53E4D7B3FAE897D /* [CP] Embed Pods Frameworks */,
+				6EF7CB92341D63DB22EAF074 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,9 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70E3D23C1FF75E06002CB5CF /* Build configuration list for PBXNativeTarget "Twin SynergyTests" */;
 			buildPhases = (
+				3394AC928879E804E2B64637 /* [CP] Check Pods Manifest.lock */,
 				70E3D2211FF75E06002CB5CF /* Sources */,
 				70E3D2221FF75E06002CB5CF /* Frameworks */,
 				70E3D2231FF75E06002CB5CF /* Resources */,
+				6664A3DF801BEFCC2B608C91 /* [CP] Embed Pods Frameworks */,
+				00BE3AF148884BBC26476B03 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,9 +339,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70E3D23F1FF75E06002CB5CF /* Build configuration list for PBXNativeTarget "Twin SynergyUITests" */;
 			buildPhases = (
+				8A0ACA6845EAB7AADF98D576 /* [CP] Check Pods Manifest.lock */,
 				70E3D22C1FF75E06002CB5CF /* Sources */,
 				70E3D22D1FF75E06002CB5CF /* Frameworks */,
 				70E3D22E1FF75E06002CB5CF /* Resources */,
+				F3454F95FC0662A2055E7915 /* [CP] Embed Pods Frameworks */,
+				ED7799A7CB8AD885724EB332 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,6 +430,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00BE3AF148884BBC26476B03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin SynergyTests/Pods-Twin SynergyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3394AC928879E804E2B64637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twin SynergyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		631EF351D53E4D7B3FAE897D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6664A3DF801BEFCC2B608C91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin SynergyTests/Pods-Twin SynergyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EF7CB92341D63DB22EAF074 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A0ACA6845EAB7AADF98D576 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twin SynergyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3152BBE04C589DCAFA42447 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twin Synergy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED7799A7CB8AD885724EB332 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin SynergyUITests/Pods-Twin SynergyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3454F95FC0662A2055E7915 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin SynergyUITests/Pods-Twin SynergyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70E3D20A1FF75E06002CB5CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -389,6 +591,8 @@
 				70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */,
 				70557BC92008B6EF00198227 /* ProfileViewModel.swift in Sources */,
 				70C39AAF1FF7FF590055464A /* mainMenuViewController.swift in Sources */,
+				70557BCF2009ED4500198227 /* MapViewModel.swift in Sources */,
+				70557BCD2009EA2F00198227 /* MapModel.swift in Sources */,
 				70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */,
 				70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */,
 				70557BC72008B6E000198227 /* ProfileModel.swift in Sources */,
@@ -406,6 +610,7 @@
 				708CE7D12005E5C5004FD874 /* ViewControllerTests.swift in Sources */,
 				70C57A5D20046207002BC17F /* MyColorStructTests.swift in Sources */,
 				708CE7D32005EB61004FD874 /* ProfileViewControllerTest.swift in Sources */,
+				70557BCB2009DFE400198227 /* MapViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +766,7 @@
 		};
 		70E3D23A1FF75E06002CB5CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 297E2F55FDC09B03F6F75A03 /* Pods-Twin Synergy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -576,6 +782,7 @@
 		};
 		70E3D23B1FF75E06002CB5CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D950B4039C55726391F2BF8 /* Pods-Twin Synergy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -591,6 +798,7 @@
 		};
 		70E3D23D1FF75E06002CB5CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FAFB2021FA5C2946F0728E5 /* Pods-Twin SynergyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -610,6 +818,7 @@
 		};
 		70E3D23E1FF75E06002CB5CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00461701A4304F262242360A /* Pods-Twin SynergyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -628,6 +837,7 @@
 		};
 		70E3D2401FF75E06002CB5CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084F4E7C3B194325FFB11E33 /* Pods-Twin SynergyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -644,6 +854,7 @@
 		};
 		70E3D2411FF75E06002CB5CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68DCEDC6BE93BD5932B3DD7E /* Pods-Twin SynergyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

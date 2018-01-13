@@ -7,14 +7,42 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class mapViewController: UIViewController {
+class mapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDelegate {
 
+    @IBOutlet var mapView: MKMapView!
+    let locationManager = CLLocationManager()
+    private var mapViewModel: MapViewModel!
+    let mAddress = """
+                        1,3 Soi 4 Seri Village 8  Suan-Luang
+                        Suan-Luang bangkok 10250
+                       """
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupMapView()
     }
+    func setupMapView(){
+        mapViewModel = MapViewModel(map: MapModel(placeName: "Twin Synergy Co., Ltd.", address: mAddress, lat: 13.7405067, lng: 100.6314097))
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+        self.mapView.showsUserLocation = true
+        
+        let center = CLLocationCoordinate2D(latitude: CLLocationDegrees(mapViewModel.lat), longitude: CLLocationDegrees(mapViewModel.lng))
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        self.mapView.setRegion(region, animated: true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.title = mapViewModel.placeName
+        annotation.subtitle = mapViewModel.address
+        annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(mapViewModel.lat), longitude: CLLocationDegrees(mapViewModel.lng))
+        mapView.addAnnotation(annotation)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

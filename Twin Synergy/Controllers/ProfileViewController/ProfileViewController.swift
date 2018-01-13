@@ -14,18 +14,20 @@ class ProfileViewController: CustomNavigationController,MFMailComposeViewControl
     @IBOutlet var telephoneLabel: UILabel!
     @IBOutlet var emailMeLabel: UILabel!
     private var profile: ProfileViewModel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let mAddress = """
+    let mAddress = """
                         Twin synergy Co.,Ltd.
                         1,3 Soi 4 Seri Village 8  Suan-Luang
                         Suan-Luang bangkok 10250
                        """
-        self.profile = ProfileViewModel(mProfile: ProfileModel(address: mAddress, telephone: "+66925905444", email: "khomkrid@twinsynergy.co.th"))
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.profile = ProfileViewModel(profile: ProfileModel(address: mAddress, telephone: "+66925905444", email: "khomkrid@twinsynergy.co.th"))
         addressLabel.text = self.profile.address
         telephoneLabel.text = self.profile.telephone
         emailMeLabel.text = self.profile.email
-        
+        addGestureRecognizerToGroupLabel()
+    }
+    func addGestureRecognizerToGroupLabel(){
         let tapGestureForAddress = UITapGestureRecognizer(target: self, action: #selector(mapHandleTap(sender:)))
         addressLabel.addGestureRecognizer(tapGestureForAddress)
         
@@ -35,7 +37,6 @@ class ProfileViewController: CustomNavigationController,MFMailComposeViewControl
         let tabGestureForEmail = UITapGestureRecognizer(target: self, action: #selector(emailHandleTap(sender:)))
         emailMeLabel.addGestureRecognizer(tabGestureForEmail)
     }
-
     @IBAction func emailHandleTap(sender: UITapGestureRecognizer) {
         guard ((sender.view as? UILabel)?.text) != nil else { return }
         guard MFMailComposeViewController.canSendMail() else {
@@ -75,16 +76,5 @@ class ProfileViewController: CustomNavigationController,MFMailComposeViewControl
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -40,7 +40,7 @@ class ProfileViewControllerTest: XCTestCase {
     }
     
     func testProfileViewModel(){
-        let profile = ProfileViewModel(mProfile: ProfileModel(address: "aaa", telephone: "bbb", email: "ccc@ccc.com"))
+        let profile = ProfileViewModel(profile: ProfileModel(address: "aaa", telephone: "bbb", email: "ccc@ccc.com"))
         XCTAssertEqual(profile.address, "aaa")
         XCTAssertEqual(profile.telephone, "bbb")
         XCTAssertEqual(profile.email, "ccc@ccc.com")
