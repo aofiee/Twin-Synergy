@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -88,7 +89,8 @@ for website and mobile application. </string>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dau-QA-2N4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="UQ3-Jl-HKR">
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="UQ3-Jl-HKR">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -216,7 +218,64 @@ dummy text of the printing </string>
                                         <constraint firstItem="7Jn-gq-0gH" firstAttribute="leading" secondItem="Hdj-HU-8rh" secondAttribute="trailing" constant="14" id="w49-O2-iaZ"/>
                                     </constraints>
                                 </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="mCell" rowHeight="304" id="JKu-Xn-qUs" customClass="homeTableViewCell" customModule="Twin_Synergy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="295" width="375" height="304"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JKu-Xn-qUs" id="3Xa-85-3H7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="303.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Jb-bK-lQF">
+                                                    <rect key="frame" x="15" y="82" width="345" height="191"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="191" id="Kad-7N-11p"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34Q-91-3nl">
+                                                    <rect key="frame" x="15" y="21" width="345" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="zJe-E5-1Ss"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPm-IO-TAj">
+                                                    <rect key="frame" x="15" y="50" width="345" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="rQh-hf-2zm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WPm-IO-TAj" firstAttribute="trailing" secondItem="3Xa-85-3H7" secondAttribute="trailingMargin" id="02F-xV-vzY"/>
+                                                <constraint firstItem="34Q-91-3nl" firstAttribute="trailing" secondItem="3Xa-85-3H7" secondAttribute="trailingMargin" id="1Qc-7v-0jq"/>
+                                                <constraint firstItem="34Q-91-3nl" firstAttribute="leading" secondItem="3Xa-85-3H7" secondAttribute="leadingMargin" id="BDL-AR-a2b"/>
+                                                <constraint firstItem="WPm-IO-TAj" firstAttribute="leading" secondItem="3Xa-85-3H7" secondAttribute="leadingMargin" id="GuM-Yo-BZ6"/>
+                                                <constraint firstItem="8Jb-bK-lQF" firstAttribute="trailing" secondItem="3Xa-85-3H7" secondAttribute="trailingMargin" id="OBz-VT-zvb"/>
+                                                <constraint firstItem="8Jb-bK-lQF" firstAttribute="leading" secondItem="3Xa-85-3H7" secondAttribute="leadingMargin" id="lEC-J7-Qjc"/>
+                                                <constraint firstItem="34Q-91-3nl" firstAttribute="top" secondItem="3Xa-85-3H7" secondAttribute="topMargin" constant="10" id="ntR-GU-rY0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="8Jb-bK-lQF" secondAttribute="bottom" constant="20" id="rIu-cs-FZS"/>
+                                                <constraint firstItem="WPm-IO-TAj" firstAttribute="top" secondItem="34Q-91-3nl" secondAttribute="bottom" constant="8" id="zLc-t2-xjn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="coverImageView" destination="8Jb-bK-lQF" id="enJ-6b-qhY"/>
+                                            <outlet property="descLabel" destination="WPm-IO-TAj" id="Car-5L-cwT"/>
+                                            <outlet property="titleLabel" destination="34Q-91-3nl" id="pDS-y6-fD8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eva-R6-Mur" id="QSQ-ON-cWA"/>
+                                    <outlet property="delegate" destination="eva-R6-Mur" id="cQZ-pT-V6t"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -235,6 +294,7 @@ dummy text of the printing </string>
                     <tabBarItem key="tabBarItem" title="" image="icon_home" id="IxW-wk-gNf"/>
                     <navigationItem key="navigationItem" title="Twin Synergy" id="Zi5-kv-ud1"/>
                     <connections>
+                        <outlet property="myTab" destination="Dau-QA-2N4" id="9MF-Nf-r8c"/>
                         <outlet property="viewCollection" destination="u2d-3J-Dun" id="CMT-qk-nHY"/>
                     </connections>
                 </viewController>

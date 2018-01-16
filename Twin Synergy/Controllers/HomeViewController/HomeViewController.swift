@@ -10,16 +10,19 @@ import UIKit
 
 class HomeViewController: CustomNavigationController {
 
+    @IBOutlet var myTab: UITableView!
     @IBOutlet var viewCollection: UICollectionView!
     fileprivate let itemsPerRow: CGFloat = 3
-    fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 0.0, right: 10.0)
-    private var mobileListViewModel :MobileViewModel!
+    fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
+    private var mobileListViewModel: MobileViewModel!
+    private var webListViewModel: WebViewModel!
     private var dataAccess :DataAccess!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataAccess = DataAccess()
         self.mobileListViewModel = MobileViewModel(dataAccess: self.dataAccess)
+        self.webListViewModel = WebViewModel(dataAccess: self.dataAccess)
         viewCollection.reloadData()
     }
     override func didReceiveMemoryWarning() {
@@ -27,6 +30,24 @@ class HomeViewController: CustomNavigationController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.webListViewModel.webViewModels.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mCell", for: indexPath) as! homeTableViewCell
+        cell.coverImageView.image = UIImage.init(named: self.webListViewModel.webViewModels[indexPath.row].webCover)
+        cell.titleLabel.text = self.webListViewModel.webViewModels[indexPath.row].webTitle
+        cell.descLabel.text = self.webListViewModel.webViewModels[indexPath.row].webDescription
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 304;
+    }
 }
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
