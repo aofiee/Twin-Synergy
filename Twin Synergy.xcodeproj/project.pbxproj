@@ -46,6 +46,8 @@
 		70EEE6ED200DE9920096F31F /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6EC200DE9920096F31F /* homeTableViewCell.swift */; };
 		70EEE6F0200DF6E20096F31F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6EF200DF6E20096F31F /* PageViewController.swift */; };
 		70EEE6F3200DFDC50096F31F /* WebSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6F2200DFDC50096F31F /* WebSiteViewController.swift */; };
+		70EEE6F6200E075E0096F31F /* MobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6F5200E075E0096F31F /* MobileViewController.swift */; };
+		70EEE6F9200E09B20096F31F /* mobileDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6F8200E09B20096F31F /* mobileDetailCell.swift */; };
 		D7FC2B77E1834A59371B833E /* Pods_Twin_SynergyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749BC36A818C0B9373B6F4C5 /* Pods_Twin_SynergyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +119,8 @@
 		70EEE6EC200DE9920096F31F /* homeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
 		70EEE6EF200DF6E20096F31F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		70EEE6F2200DFDC50096F31F /* WebSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSiteViewController.swift; sourceTree = "<group>"; };
+		70EEE6F5200E075E0096F31F /* MobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileViewController.swift; sourceTree = "<group>"; };
+		70EEE6F8200E09B20096F31F /* mobileDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobileDetailCell.swift; sourceTree = "<group>"; };
 		749BC36A818C0B9373B6F4C5 /* Pods_Twin_SynergyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_SynergyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3E533111181D6D622B0CCB /* Pods_Twin_SynergyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_SynergyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -323,6 +327,7 @@
 		70E3D2421FF77231002CB5CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				70EEE6F4200E07390096F31F /* MobileViewController */,
 				70EEE6F1200DFDAE0096F31F /* WebSiteViewController */,
 				70EEE6EE200DF6020096F31F /* PageViewController */,
 				7051C01F200A74F600574FD8 /* albumViewController */,
@@ -390,6 +395,23 @@
 				70EEE6F2200DFDC50096F31F /* WebSiteViewController.swift */,
 			);
 			path = WebSiteViewController;
+			sourceTree = "<group>";
+		};
+		70EEE6F4200E07390096F31F /* MobileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70EEE6F7200E09800096F31F /* mobileDetailCell */,
+				70EEE6F5200E075E0096F31F /* MobileViewController.swift */,
+			);
+			path = MobileViewController;
+			sourceTree = "<group>";
+		};
+		70EEE6F7200E09800096F31F /* mobileDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				70EEE6F8200E09B20096F31F /* mobileDetailCell.swift */,
+			);
+			path = mobileDetailCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -696,6 +718,7 @@
 				7051C021200A751100574FD8 /* albumViewController.swift in Sources */,
 				7051C01E200A727700574FD8 /* DataAccess.swift in Sources */,
 				70EEE6E6200DBBCE0096F31F /* homeCollectionViewCell.swift in Sources */,
+				70EEE6F6200E075E0096F31F /* MobileViewController.swift in Sources */,
 				70557BCF2009ED4500198227 /* MapViewModel.swift in Sources */,
 				70557BCD2009EA2F00198227 /* MapModel.swift in Sources */,
 				70AAA0B9200C936900F797C3 /* AlbumViewModel.swift in Sources */,
@@ -711,6 +734,7 @@
 				70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */,
 				70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */,
 				7051C01C200A716F00574FD8 /* AlbumModel.swift in Sources */,
+				70EEE6F9200E09B20096F31F /* mobileDetailCell.swift in Sources */,
 				70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */,
 				70EEE6ED200DE9920096F31F /* homeTableViewCell.swift in Sources */,
 				70C39AA61FF7E4110055464A /* mapViewController.swift in Sources */,

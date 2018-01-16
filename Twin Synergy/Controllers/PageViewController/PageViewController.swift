@@ -30,7 +30,7 @@ class PageViewController: UIPageViewController {
         return [
             self.newColoredViewController(viewName: "HomeViewController"),
             self.newColoredViewController(viewName: "WebSiteViewController"),
-            self.newColoredViewController(viewName: "HomeViewController")
+            self.newColoredViewController(viewName: "MobileViewController")
         ]
     }()
     private func newColoredViewController(viewName: String) -> UIViewController {
