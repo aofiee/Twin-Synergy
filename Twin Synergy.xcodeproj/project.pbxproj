@@ -44,6 +44,8 @@
 		70EEE6E8200DCFBE0096F31F /* WebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6E7200DCFBE0096F31F /* WebModel.swift */; };
 		70EEE6EA200DD5F60096F31F /* webViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6E9200DD5F60096F31F /* webViewModel.swift */; };
 		70EEE6ED200DE9920096F31F /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6EC200DE9920096F31F /* homeTableViewCell.swift */; };
+		70EEE6F0200DF6E20096F31F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6EF200DF6E20096F31F /* PageViewController.swift */; };
+		70EEE6F3200DFDC50096F31F /* WebSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6F2200DFDC50096F31F /* WebSiteViewController.swift */; };
 		D7FC2B77E1834A59371B833E /* Pods_Twin_SynergyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749BC36A818C0B9373B6F4C5 /* Pods_Twin_SynergyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +115,8 @@
 		70EEE6E7200DCFBE0096F31F /* WebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebModel.swift; sourceTree = "<group>"; };
 		70EEE6E9200DD5F60096F31F /* webViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewModel.swift; sourceTree = "<group>"; };
 		70EEE6EC200DE9920096F31F /* homeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
+		70EEE6EF200DF6E20096F31F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		70EEE6F2200DFDC50096F31F /* WebSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSiteViewController.swift; sourceTree = "<group>"; };
 		749BC36A818C0B9373B6F4C5 /* Pods_Twin_SynergyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_SynergyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3E533111181D6D622B0CCB /* Pods_Twin_SynergyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_SynergyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -319,6 +323,8 @@
 		70E3D2421FF77231002CB5CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				70EEE6F1200DFDAE0096F31F /* WebSiteViewController */,
+				70EEE6EE200DF6020096F31F /* PageViewController */,
 				7051C01F200A74F600574FD8 /* albumViewController */,
 				70C39AAD1FF7FF430055464A /* mainMenuViewController */,
 				70C39AA41FF7E3FF0055464A /* mapViewController */,
@@ -368,6 +374,22 @@
 				70EEE6EC200DE9920096F31F /* homeTableViewCell.swift */,
 			);
 			path = tableViewCell;
+			sourceTree = "<group>";
+		};
+		70EEE6EE200DF6020096F31F /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70EEE6EF200DF6E20096F31F /* PageViewController.swift */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		70EEE6F1200DFDAE0096F31F /* WebSiteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70EEE6F2200DFDC50096F31F /* WebSiteViewController.swift */,
+			);
+			path = WebSiteViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -677,10 +699,12 @@
 				70557BCF2009ED4500198227 /* MapViewModel.swift in Sources */,
 				70557BCD2009EA2F00198227 /* MapModel.swift in Sources */,
 				70AAA0B9200C936900F797C3 /* AlbumViewModel.swift in Sources */,
+				70EEE6F0200DF6E20096F31F /* PageViewController.swift in Sources */,
 				70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */,
 				70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */,
 				70EEE6EA200DD5F60096F31F /* webViewModel.swift in Sources */,
 				70557BC72008B6E000198227 /* ProfileModel.swift in Sources */,
+				70EEE6F3200DFDC50096F31F /* WebSiteViewController.swift in Sources */,
 				70EEE6E3200DB4060096F31F /* MobileViewModel.swift in Sources */,
 				70AAA0BC200CA34900F797C3 /* albumCollectionViewCell.swift in Sources */,
 				70EEE6DF200DAF250096F31F /* MobileModel.swift in Sources */,
