@@ -9,6 +9,7 @@
 import Foundation
 
 class DataAccess{
+    
     func getAlbums() -> [AlbumModel]{
         var albums = [AlbumModel]()
         albums.append(AlbumModel(albumCover: "m1", albumTitle: "MEDIA"))
@@ -18,5 +19,38 @@ class DataAccess{
         albums.append(AlbumModel(albumCover: "m5", albumTitle: "RESTURANT"))
         albums.append(AlbumModel(albumCover: "m6", albumTitle: "COMPANY"))
         return albums
+    }
+    
+    func getMobile() -> [MobileModel]{
+        var mobiles = [MobileModel]()
+        let desc = """
+                   A simple, highly customisable, data-driven 3D carousel
+                   """
+        mobiles.append(MobileModel(mobileCover: "tall1", mobileTitle: "CRYSTALCLUB", mobileDescription: desc))
+        mobiles.append(MobileModel(mobileCover: "tall2", mobileTitle: "BEAR SEEKING", mobileDescription: desc))
+        mobiles.append(MobileModel(mobileCover: "tall3", mobileTitle: "MELLO", mobileDescription: desc))
+        mobiles.append(MobileModel(mobileCover: "tall1", mobileTitle: "KICKDUDES", mobileDescription: desc))
+        mobiles.append(MobileModel(mobileCover: "tall2", mobileTitle: "BUSP", mobileDescription: desc))
+        mobiles.append(MobileModel(mobileCover: "tall3", mobileTitle: "EBA", mobileDescription: desc))
+        return mobiles
+    }
+    
+    func getWeb() -> [WebModel] {
+        var webs = [WebModel]()
+        let desc = """
+                   A simple, highly customisable, data-driven 3D carousel
+                   """
+        webs.append(WebModel(webCover: "tall1", webTitle: "TATA YOUNG", webDescription: desc))
+        webs.append(WebModel(webCover: "tall2", webTitle: "PADAENG", webDescription: desc))
+        webs.append(WebModel(webCover: "tall3", webTitle: "UKHEM", webDescription: desc))
+        webs.append(WebModel(webCover: "tall1", webTitle: "MIRARA", webDescription: desc))
+        webs.append(WebModel(webCover: "tall2", webTitle: "SPICY DISC", webDescription: desc))
+        webs.append(WebModel(webCover: "tall3", webTitle: "CENTRAL THAM", webDescription: desc))
+        webs.append(WebModel(webCover: "tall1", webTitle: "CENTRAL BKK", webDescription: desc))
+        webs.append(WebModel(webCover: "tall2", webTitle: "KICKDUDES", webDescription: desc))
+        webs.append(WebModel(webCover: "tall3", webTitle: "MELLO", webDescription: desc))
+        webs.append(WebModel(webCover: "tall1", webTitle: "FSM", webDescription: desc))
+        webs.append(WebModel(webCover: "tall2", webTitle: "KICKDUDES.CLUB", webDescription: desc))
+        return webs
     }
 }

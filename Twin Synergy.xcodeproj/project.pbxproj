@@ -37,6 +37,12 @@
 		70E3D2351FF75E06002CB5CF /* Twin_SynergyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2341FF75E06002CB5CF /* Twin_SynergyUITests.swift */; };
 		70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2481FF77294002CB5CF /* HomeViewController.swift */; };
 		70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */; };
+		70EEE6DF200DAF250096F31F /* MobileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6DE200DAF250096F31F /* MobileModel.swift */; };
+		70EEE6E1200DAFB70096F31F /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6E0200DAFB70096F31F /* HomeViewControllerTests.swift */; };
+		70EEE6E3200DB4060096F31F /* MobileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6E2200DB4060096F31F /* MobileViewModel.swift */; };
+		70EEE6E6200DBBCE0096F31F /* homeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6E5200DBBCE0096F31F /* homeCollectionViewCell.swift */; };
+		70EEE6E8200DCFBE0096F31F /* WebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6E7200DCFBE0096F31F /* WebModel.swift */; };
+		70EEE6EA200DD5F60096F31F /* webViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6E9200DD5F60096F31F /* webViewModel.swift */; };
 		D7FC2B77E1834A59371B833E /* Pods_Twin_SynergyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749BC36A818C0B9373B6F4C5 /* Pods_Twin_SynergyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +105,12 @@
 		70E3D2361FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3D2481FF77294002CB5CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		70EEE6DE200DAF250096F31F /* MobileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileModel.swift; sourceTree = "<group>"; };
+		70EEE6E0200DAFB70096F31F /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		70EEE6E2200DB4060096F31F /* MobileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileViewModel.swift; sourceTree = "<group>"; };
+		70EEE6E5200DBBCE0096F31F /* homeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollectionViewCell.swift; sourceTree = "<group>"; };
+		70EEE6E7200DCFBE0096F31F /* WebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebModel.swift; sourceTree = "<group>"; };
+		70EEE6E9200DD5F60096F31F /* webViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewModel.swift; sourceTree = "<group>"; };
 		749BC36A818C0B9373B6F4C5 /* Pods_Twin_SynergyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_SynergyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3E533111181D6D622B0CCB /* Pods_Twin_SynergyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_SynergyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -153,6 +165,7 @@
 				708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */,
 				70557BCA2009DFE400198227 /* MapViewControllerTests.swift */,
 				7051C024200A753900574FD8 /* albumViewControllerTests.swift */,
+				70EEE6E0200DAFB70096F31F /* HomeViewControllerTests.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -180,6 +193,8 @@
 				70557BC82008B6EF00198227 /* ProfileViewModel.swift */,
 				70557BCE2009ED4500198227 /* MapViewModel.swift */,
 				70AAA0B8200C936900F797C3 /* AlbumViewModel.swift */,
+				70EEE6E2200DB4060096F31F /* MobileViewModel.swift */,
+				70EEE6E9200DD5F60096F31F /* webViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,6 +205,8 @@
 				70557BC62008B6E000198227 /* ProfileModel.swift */,
 				70557BCC2009EA2F00198227 /* MapModel.swift */,
 				7051C01B200A716F00574FD8 /* AlbumModel.swift */,
+				70EEE6DE200DAF250096F31F /* MobileModel.swift */,
+				70EEE6E7200DCFBE0096F31F /* WebModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,6 +329,7 @@
 		70E3D2431FF7723B002CB5CF /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				70EEE6E4200DBBB20096F31F /* collectionViewCell */,
 				70E3D2481FF77294002CB5CF /* HomeViewController.swift */,
 			);
 			path = HomeViewController;
@@ -331,6 +349,14 @@
 				70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		70EEE6E4200DBBB20096F31F /* collectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				70EEE6E5200DBBCE0096F31F /* homeCollectionViewCell.swift */,
+			);
+			path = collectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -633,15 +659,20 @@
 				70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */,
 				70557BC92008B6EF00198227 /* ProfileViewModel.swift in Sources */,
 				70C39AAF1FF7FF590055464A /* mainMenuViewController.swift in Sources */,
+				70EEE6E8200DCFBE0096F31F /* WebModel.swift in Sources */,
 				7051C021200A751100574FD8 /* albumViewController.swift in Sources */,
 				7051C01E200A727700574FD8 /* DataAccess.swift in Sources */,
+				70EEE6E6200DBBCE0096F31F /* homeCollectionViewCell.swift in Sources */,
 				70557BCF2009ED4500198227 /* MapViewModel.swift in Sources */,
 				70557BCD2009EA2F00198227 /* MapModel.swift in Sources */,
 				70AAA0B9200C936900F797C3 /* AlbumViewModel.swift in Sources */,
 				70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */,
 				70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */,
+				70EEE6EA200DD5F60096F31F /* webViewModel.swift in Sources */,
 				70557BC72008B6E000198227 /* ProfileModel.swift in Sources */,
+				70EEE6E3200DB4060096F31F /* MobileViewModel.swift in Sources */,
 				70AAA0BC200CA34900F797C3 /* albumCollectionViewCell.swift in Sources */,
+				70EEE6DF200DAF250096F31F /* MobileModel.swift in Sources */,
 				70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */,
 				70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */,
 				7051C01C200A716F00574FD8 /* AlbumModel.swift in Sources */,
@@ -659,6 +690,7 @@
 				7051C025200A753900574FD8 /* albumViewControllerTests.swift in Sources */,
 				708CE7D32005EB61004FD874 /* ProfileViewControllerTest.swift in Sources */,
 				70557BCB2009DFE400198227 /* MapViewControllerTests.swift in Sources */,
+				70EEE6E1200DAFB70096F31F /* HomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
