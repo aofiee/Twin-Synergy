@@ -9,18 +9,40 @@
 import UIKit
 
 class PageViewController: UIPageViewController {
-
+    var currentPageIndex: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        initNotificationCenter()
         self.dataSource = self
+        self.delegate = self
+        
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController],
                                direction: .forward,
                                animated: true,
                                completion: nil)
         }
-    }
 
+    }
+    func initNotificationCenter(){
+        NotificationCenter.default.addObserver(self, selector: #selector(changeButtonColor(notification:)), name: .all, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeButtonColor(notification:)), name: .web, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeButtonColor(notification:)), name: .mobile, object: nil)
+    }
+    @objc func changeButtonColor(notification: NSNotification) {
+        if notification.name == .all {
+            print("all")
+            self.setViewControllers([self.orderedViewControllers[0]], direction: .forward, animated: true, completion: nil)
+        }
+        if notification.name == .web {
+            print("web")
+            self.setViewControllers([self.orderedViewControllers[1]], direction: .forward, animated: true, completion: nil)
+        }
+        if notification.name == .mobile {
+            print("mobile")
+            self.setViewControllers([self.orderedViewControllers[2]], direction: .forward, animated: true, completion: nil)
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,12 +61,12 @@ class PageViewController: UIPageViewController {
     }
 }
 
-extension PageViewController: UIPageViewControllerDataSource {
+extension PageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }
-        
+        currentPageIndex = viewControllerIndex
         let previousIndex = viewControllerIndex - 1
         
         // User is on the first view controller and swiped left to loop to
@@ -64,7 +86,7 @@ extension PageViewController: UIPageViewControllerDataSource {
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }
-        
+        currentPageIndex = viewControllerIndex
         let nextIndex = viewControllerIndex + 1
         let orderedViewControllersCount = orderedViewControllers.count
         
@@ -80,4 +102,26 @@ extension PageViewController: UIPageViewControllerDataSource {
         
         return orderedViewControllers[nextIndex]
     }
+    
+    func goToNextPage(){
+        
+        guard let currentViewController = self.viewControllers?.first else { return }
+        
+        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else { return }
+        
+        setViewControllers([nextViewController], direction: .forward, animated: false, completion: nil)
+        
+    }
+    
+    
+    func goToPreviousPage(){
+        
+        guard let currentViewController = self.viewControllers?.first else { return }
+        
+        guard let previousViewController = dataSource?.pageViewController( self, viewControllerBefore: currentViewController ) else { return }
+        
+        setViewControllers([previousViewController], direction: .reverse, animated: false, completion: nil)
+        
+    }
+    
 }

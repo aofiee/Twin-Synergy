@@ -336,10 +336,10 @@ dummy text of the printing </string>
             </objects>
             <point key="canvasLocation" x="2513" y="-998"/>
         </scene>
-        <!--View Controller-->
+        <!--ContainerForPageViewController-->
         <scene sceneID="4A0-AF-pdJ">
             <objects>
-                <viewController id="nOD-8w-7rB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContainerForPageViewController" title="ContainerForPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nOD-8w-7rB" customClass="ContainerForPageViewController" customModule="Twin_Synergy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rmb-mE-WiD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -363,6 +363,9 @@ dummy text of the printing </string>
                                 <state key="normal" title="All" backgroundImage="blueBtn"/>
                                 <state key="selected" title="All" backgroundImage="orangeBtn"/>
                                 <state key="highlighted" title="All" backgroundImage="orangeBtn"/>
+                                <connections>
+                                    <action selector="allBtn:" destination="nOD-8w-7rB" eventType="touchUpInside" id="awJ-ln-dBp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBc-TG-Fks">
                                 <rect key="frame" x="257" y="74" width="110" height="29"/>
@@ -374,6 +377,9 @@ dummy text of the printing </string>
                                 <state key="normal" title="Mobile" backgroundImage="blueBtn"/>
                                 <state key="selected" title="Mobile" backgroundImage="orangeBtn"/>
                                 <state key="highlighted" title="Mobile" backgroundImage="orangeBtn"/>
+                                <connections>
+                                    <action selector="mobileBtn:" destination="nOD-8w-7rB" eventType="touchUpInside" id="zvR-QE-WlV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtN-HS-Kut">
                                 <rect key="frame" x="132" y="74" width="110" height="29"/>
@@ -385,6 +391,9 @@ dummy text of the printing </string>
                                 <state key="normal" title="Website" backgroundImage="blueBtn"/>
                                 <state key="selected" title="Website" backgroundImage="orangeBtn"/>
                                 <state key="highlighted" title="Website" backgroundImage="orangeBtn"/>
+                                <connections>
+                                    <action selector="webBtn:" destination="nOD-8w-7rB" eventType="touchUpInside" id="bhk-ic-C0x"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -409,6 +418,12 @@ dummy text of the printing </string>
                         <viewLayoutGuide key="safeArea" id="3cR-LY-pwm"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icon_home" id="D03-oF-Ap7"/>
+                    <connections>
+                        <outlet property="allBtn" destination="SG5-KH-zhf" id="wOD-e8-eVs"/>
+                        <outlet property="mobileBtn" destination="gBc-TG-Fks" id="aNL-3h-uQL"/>
+                        <outlet property="pageViewContainer" destination="cN4-ih-Wwx" id="aXQ-1k-D0L"/>
+                        <outlet property="webBtn" destination="gtN-HS-Kut" id="BcS-0D-zOe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KS5-uQ-f59" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
