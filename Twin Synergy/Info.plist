@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Privacy - Location Always and When In Use Usage Description</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Use Camera Display ARKit</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Privacy - Location Always Usage Description</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

@@ -16,6 +16,37 @@ class ContainerForPageViewController: CustomNavigationController {
     @IBOutlet var mobileBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        initNotificationCenter()
+    }
+    func initNotificationCenter(){
+        NotificationCenter.default.addObserver(self, selector: #selector(changeButtonColor(notification:)), name: .switchBtn, object: nil)
+    }
+    @objc func changeButtonColor(notification: NSNotification) {
+        if notification.name == .switchBtn {
+            //print("notification.object")
+            //print(notification.object!)
+            let index = notification.object as! Int
+            switch index {
+                case 0:
+                    allBtn.isSelected = true
+                    webBtn.isSelected = false
+                    mobileBtn.isSelected = false
+                break;
+                case 1:
+                    allBtn.isSelected = false
+                    webBtn.isSelected = true
+                    mobileBtn.isSelected = false
+                break;
+                case 2:
+                    allBtn.isSelected = false
+                    webBtn.isSelected = false
+                    mobileBtn.isSelected = true
+                break;
+                default:
+                    
+                break;
+            }
+        }
     }
     @IBAction func allBtn(_ sender: Any) {
         allBtn.isSelected = true

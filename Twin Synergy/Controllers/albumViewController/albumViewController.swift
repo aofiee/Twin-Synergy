@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class albumViewController: UIViewController {
+class albumViewController: CustomNavigationController {
     
     fileprivate let itemsPerRow: CGFloat = 2
     fileprivate let sectionInsets = UIEdgeInsets(top: 25.0, left: 20.0, bottom: 20.0, right: 25.0)

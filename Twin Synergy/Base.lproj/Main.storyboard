@@ -705,7 +705,7 @@ Suan-Luang bangkok 10250</string>
         <scene sceneID="ZZL-6W-7l3">
             <objects>
                 <viewController storyboardIdentifier="WebSiteViewController" title="WebSiteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VDA-EW-zCt" customClass="WebSiteViewController" customModule="Twin_Synergy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ecd-ya-7xh">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="ecd-ya-7xh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -801,7 +801,7 @@ Suan-Luang bangkok 10250</string>
         <scene sceneID="a3e-8r-cg6">
             <objects>
                 <viewController storyboardIdentifier="MobileViewController" title="MobileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2QH-y5-oq0" customClass="MobileViewController" customModule="Twin_Synergy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i3T-i5-znU">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="i3T-i5-znU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -921,6 +921,49 @@ Suan-Luang bangkok 10250</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rOH-Vj-lcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4640.8000000000002" y="-275.71214392803603"/>
+        </scene>
+        <!--ARCameraViewController-->
+        <scene sceneID="vDF-J3-gy4">
+            <objects>
+                <viewController storyboardIdentifier="ARCameraViewController" title="ARCameraViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WiZ-Ow-IYz" customClass="ARCameraViewController" customModule="Twin_Synergy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ncc-9G-72U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4Y-cL-5bQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgK-qv-HWU">
+                                <rect key="frame" x="322" y="20" width="37" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="8bz-ns-JXo"/>
+                                    <constraint firstAttribute="width" constant="37" id="jaK-A5-zOF"/>
+                                </constraints>
+                                <state key="normal" image="icon_cancel"/>
+                                <connections>
+                                    <action selector="closeBtnAction:" destination="WiZ-Ow-IYz" eventType="touchUpInside" id="yDc-aF-lLg"/>
+                                    <action selector="closeTapped:" destination="XG1-G0-bR8" eventType="touchUpInside" id="kiq-Vi-CLF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l4Y-cL-5bQ" firstAttribute="leading" secondItem="UhV-Ww-aK2" secondAttribute="leading" id="74x-4V-aRf"/>
+                            <constraint firstItem="UhV-Ww-aK2" firstAttribute="trailing" secondItem="JgK-qv-HWU" secondAttribute="trailing" constant="16" id="Apy-HI-gaZ"/>
+                            <constraint firstItem="l4Y-cL-5bQ" firstAttribute="top" secondItem="ncc-9G-72U" secondAttribute="top" id="BI9-Q0-0TD"/>
+                            <constraint firstItem="l4Y-cL-5bQ" firstAttribute="bottom" secondItem="UhV-Ww-aK2" secondAttribute="bottom" id="Ki4-FQ-EVd"/>
+                            <constraint firstItem="JgK-qv-HWU" firstAttribute="top" secondItem="UhV-Ww-aK2" secondAttribute="top" id="Nn6-dr-zv7"/>
+                            <constraint firstItem="l4Y-cL-5bQ" firstAttribute="trailing" secondItem="UhV-Ww-aK2" secondAttribute="trailing" id="UbW-Zp-ikO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UhV-Ww-aK2"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="l4Y-cL-5bQ" id="lMI-29-0WV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ib8-bU-eVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5533.6000000000004" y="109.29535232383809"/>
         </scene>
     </scenes>
     <resources>

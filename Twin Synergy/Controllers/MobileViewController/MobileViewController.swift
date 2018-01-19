@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MobileViewController: UIViewController {
+class MobileViewController: CustomNavigationController {
 
     @IBOutlet var viewCollection: UICollectionView!
     fileprivate let itemsPerRow: CGFloat = 2

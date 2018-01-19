@@ -31,15 +31,12 @@ class PageViewController: UIPageViewController {
     }
     @objc func changeButtonColor(notification: NSNotification) {
         if notification.name == .all {
-            print("all")
             self.setViewControllers([self.orderedViewControllers[0]], direction: .forward, animated: true, completion: nil)
         }
         if notification.name == .web {
-            print("web")
             self.setViewControllers([self.orderedViewControllers[1]], direction: .forward, animated: true, completion: nil)
         }
         if notification.name == .mobile {
-            print("mobile")
             self.setViewControllers([self.orderedViewControllers[2]], direction: .forward, animated: true, completion: nil)
         }
     }
@@ -66,9 +63,7 @@ extension PageViewController: UIPageViewControllerDataSource, UIPageViewControll
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }
-        currentPageIndex = viewControllerIndex
         let previousIndex = viewControllerIndex - 1
-        
         // User is on the first view controller and swiped left to loop to
         // the last view controller.
         guard previousIndex >= 0 else {
@@ -86,10 +81,8 @@ extension PageViewController: UIPageViewControllerDataSource, UIPageViewControll
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
             return nil
         }
-        currentPageIndex = viewControllerIndex
         let nextIndex = viewControllerIndex + 1
         let orderedViewControllersCount = orderedViewControllers.count
-        
         // User is on the last view controller and swiped right to loop to
         // the first view controller.
         guard orderedViewControllersCount != nextIndex else {
@@ -99,6 +92,7 @@ extension PageViewController: UIPageViewControllerDataSource, UIPageViewControll
         guard orderedViewControllersCount > nextIndex else {
             return nil
         }
+
         
         return orderedViewControllers[nextIndex]
     }
@@ -124,4 +118,14 @@ extension PageViewController: UIPageViewControllerDataSource, UIPageViewControll
         
     }
     
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool)
+    {
+        currentPageIndex = pageViewController.viewControllers!.first!.view.tag
+        NotificationCenter.default.post(name: .switchBtn, object: currentPageIndex)
+    }
+    
+}
+
+extension Notification.Name {
+    static let switchBtn = Notification.Name("switchBtn")
 }

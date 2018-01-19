@@ -44,7 +44,10 @@ class CustomNavigationController: UIViewController {
         print("xxxxx")
     }
     @objc func cameraTapped(sender: AnyObject) {
-        print("yyyyy")
+        print("zzzzz")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ARCameraViewController") as! ARCameraViewController
+        present(vc, animated: true)
     }
     @objc func mainMenuTapped(sender: AnyObject) {
         print("zzzzz")

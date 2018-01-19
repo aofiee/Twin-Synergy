@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B755EAFF6515D2D06ADFAD9 /* Pods_Twin_Synergy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520E01D78A953AA1E3DD1EC3 /* Pods_Twin_Synergy.framework */; };
 		48A4FC0EAD2A767CAD770120 /* Pods_Twin_SynergyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3E533111181D6D622B0CCB /* Pods_Twin_SynergyUITests.framework */; };
+		70453E9820109AE70051714C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 70453E9720109AE70051714C /* art.scnassets */; };
 		7048393E200465E600E74C93 /* MyColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048393D200465E600E74C93 /* MyColorStruct.swift */; };
+		7048B86320104D070074BAE1 /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048B86220104D070074BAE1 /* ARCameraViewController.swift */; };
 		7051C01C200A716F00574FD8 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051C01B200A716F00574FD8 /* AlbumModel.swift */; };
 		7051C01E200A727700574FD8 /* DataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051C01D200A727700574FD8 /* DataAccess.swift */; };
 		7051C021200A751100574FD8 /* albumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051C020200A751100574FD8 /* albumViewController.swift */; };
@@ -77,7 +79,9 @@
 		4D950B4039C55726391F2BF8 /* Pods-Twin Synergy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin Synergy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy.release.xcconfig"; sourceTree = "<group>"; };
 		520E01D78A953AA1E3DD1EC3 /* Pods_Twin_Synergy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_Synergy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DCEDC6BE93BD5932B3DD7E /* Pods-Twin SynergyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin SynergyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twin SynergyUITests/Pods-Twin SynergyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70453E9720109AE70051714C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		7048393D200465E600E74C93 /* MyColorStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorStruct.swift; sourceTree = "<group>"; };
+		7048B86220104D070074BAE1 /* ARCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraViewController.swift; sourceTree = "<group>"; };
 		7051C01B200A716F00574FD8 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		7051C01D200A727700574FD8 /* DataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccess.swift; sourceTree = "<group>"; };
 		7051C020200A751100574FD8 /* albumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +186,14 @@
 			path = TDD;
 			sourceTree = "<group>";
 		};
+		7048B86120104CE80074BAE1 /* ARCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7048B86220104D070074BAE1 /* ARCameraViewController.swift */,
+			);
+			path = ARCameraViewController;
+			sourceTree = "<group>";
+		};
 		7051C01A200A713E00574FD8 /* dataAccess */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +241,14 @@
 				70AAA0BB200CA34900F797C3 /* albumCollectionViewCell.swift */,
 			);
 			path = collectionViewCell;
+			sourceTree = "<group>";
+		};
+		70C08657201094F800027A6B /* daeAsset */ = {
+			isa = PBXGroup;
+			children = (
+				70453E9720109AE70051714C /* art.scnassets */,
+			);
+			path = daeAsset;
 			sourceTree = "<group>";
 		};
 		70C39AA11FF7DFCC0055464A /* ProfileViewController */ = {
@@ -291,6 +311,7 @@
 		70E3D2101FF75E06002CB5CF /* Twin Synergy */ = {
 			isa = PBXGroup;
 			children = (
+				70C08657201094F800027A6B /* daeAsset */,
 				7051C01A200A713E00574FD8 /* dataAccess */,
 				70557BC52008B5DB00198227 /* Model */,
 				70557BC42008B5CD00198227 /* ViewModel */,
@@ -329,6 +350,7 @@
 		70E3D2421FF77231002CB5CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7048B86120104CE80074BAE1 /* ARCameraViewController */,
 				70EEE6FA200E42400096F31F /* ContainerForPageViewController */,
 				70EEE6F4200E07390096F31F /* MobileViewController */,
 				70EEE6F1200DFDAE0096F31F /* WebSiteViewController */,
@@ -544,6 +566,7 @@
 			files = (
 				70E3D21F1FF75E06002CB5CF /* LaunchScreen.storyboard in Resources */,
 				70E3D21C1FF75E06002CB5CF /* Assets.xcassets in Resources */,
+				70453E9820109AE70051714C /* art.scnassets in Resources */,
 				70E3D2171FF75E06002CB5CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -721,6 +744,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7048B86320104D070074BAE1 /* ARCameraViewController.swift in Sources */,
 				7048393E200465E600E74C93 /* MyColorStruct.swift in Sources */,
 				70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */,
 				70557BC92008B6EF00198227 /* ProfileViewModel.swift in Sources */,
