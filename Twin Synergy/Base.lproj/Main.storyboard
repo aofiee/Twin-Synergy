@@ -336,6 +336,82 @@ dummy text of the printing </string>
             </objects>
             <point key="canvasLocation" x="2513" y="-998"/>
         </scene>
+        <!--Twin Synergy-->
+        <scene sceneID="FR3-hx-xgT">
+            <objects>
+                <viewController storyboardIdentifier="AlbumContainerViewController" title="Twin Synergy" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J2v-f0-n8p" customClass="AlbumContainerViewController" customModule="Twin_Synergy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CUf-d9-3Ye">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG2" translatesAutoresizingMaskIntoConstraints="NO" id="cd9-fw-yKe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSy-qY-5oH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="Irg-O7-lIx" kind="embed" id="DEE-cR-Cee"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cd9-fw-yKe" firstAttribute="bottom" secondItem="8l4-GC-lco" secondAttribute="bottom" id="9UO-cQ-8OC"/>
+                            <constraint firstItem="xSy-qY-5oH" firstAttribute="trailing" secondItem="8l4-GC-lco" secondAttribute="trailing" id="Kxi-SZ-rRL"/>
+                            <constraint firstItem="cd9-fw-yKe" firstAttribute="trailing" secondItem="8l4-GC-lco" secondAttribute="trailing" id="X6F-fG-0A9"/>
+                            <constraint firstItem="xSy-qY-5oH" firstAttribute="leading" secondItem="8l4-GC-lco" secondAttribute="leading" id="auh-tG-2Wl"/>
+                            <constraint firstItem="xSy-qY-5oH" firstAttribute="top" secondItem="CUf-d9-3Ye" secondAttribute="top" id="fep-hh-Z1X"/>
+                            <constraint firstItem="cd9-fw-yKe" firstAttribute="top" secondItem="CUf-d9-3Ye" secondAttribute="top" id="gbl-q6-nvu"/>
+                            <constraint firstItem="xSy-qY-5oH" firstAttribute="bottom" secondItem="8l4-GC-lco" secondAttribute="bottom" id="pl3-LQ-1Kh"/>
+                            <constraint firstItem="cd9-fw-yKe" firstAttribute="leading" secondItem="8l4-GC-lco" secondAttribute="leading" id="tiu-Wy-ffN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8l4-GC-lco"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfx-Xh-onr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3244" y="-1146.4767616191905"/>
+        </scene>
+        <!--Album Page View Controller-->
+        <scene sceneID="atH-Ei-02e">
+            <objects>
+                <pageViewController storyboardIdentifier="AlbumPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Irg-O7-lIx" customClass="AlbumPageViewController" customModule="Twin_Synergy" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfE-LA-qsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4319" y="-1146"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EMQ-GX-RhI">
+            <objects>
+                <viewController id="IFK-hH-IaL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rGw-eq-ESH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sFi-Py-Nx3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="IrT-aQ-5Zz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sFi-Py-Nx3" firstAttribute="leading" secondItem="pZP-Ua-gvT" secondAttribute="leading" id="F6M-wH-yFW"/>
+                            <constraint firstItem="sFi-Py-Nx3" firstAttribute="trailing" secondItem="pZP-Ua-gvT" secondAttribute="trailing" id="Qwm-sI-Eb9"/>
+                            <constraint firstItem="sFi-Py-Nx3" firstAttribute="bottom" secondItem="pZP-Ua-gvT" secondAttribute="bottom" id="swf-ft-8q1"/>
+                            <constraint firstItem="sFi-Py-Nx3" firstAttribute="top" secondItem="rGw-eq-ESH" secondAttribute="top" id="z7F-bS-uaH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pZP-Ua-gvT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLK-JF-3qa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5088.8000000000002" y="-1146.4767616191905"/>
+        </scene>
         <!--ContainerForPageViewController-->
         <scene sceneID="4A0-AF-pdJ">
             <objects>
@@ -678,7 +754,7 @@ Suan-Luang bangkok 10250</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rac-sw-Mwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945.60000000000002" y="132.23388305847078"/>
+            <point key="canvasLocation" x="994" y="140"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Wnj-Sf-8sX">

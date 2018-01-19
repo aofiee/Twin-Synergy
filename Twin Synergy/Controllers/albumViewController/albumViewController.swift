@@ -45,7 +45,11 @@ extension albumViewController: UICollectionViewDataSource, UICollectionViewDeleg
         cell.albumTitle.text = self.albumListViewModel.albumViewModels[indexPath.item].albumTitle
         return cell
     }
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AlbumContainerViewController") as! AlbumContainerViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension albumViewController : UICollectionViewDelegateFlowLayout {

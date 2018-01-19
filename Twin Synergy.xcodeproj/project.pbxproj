@@ -39,6 +39,8 @@
 		70E3D2351FF75E06002CB5CF /* Twin_SynergyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2341FF75E06002CB5CF /* Twin_SynergyUITests.swift */; };
 		70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2481FF77294002CB5CF /* HomeViewController.swift */; };
 		70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */; };
+		70E4C9462011D88B0051B95E /* AlbumPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4C9452011D88B0051B95E /* AlbumPageViewController.swift */; };
+		70E4C9492011DE6D0051B95E /* AlbumContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4C9482011DE6D0051B95E /* AlbumContainerViewController.swift */; };
 		70EEE6DF200DAF250096F31F /* MobileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6DE200DAF250096F31F /* MobileModel.swift */; };
 		70EEE6E1200DAFB70096F31F /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6E0200DAFB70096F31F /* HomeViewControllerTests.swift */; };
 		70EEE6E3200DB4060096F31F /* MobileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EEE6E2200DB4060096F31F /* MobileViewModel.swift */; };
@@ -115,6 +117,8 @@
 		70E3D2361FF75E06002CB5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E3D2481FF77294002CB5CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		70E4C9452011D88B0051B95E /* AlbumPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPageViewController.swift; sourceTree = "<group>"; };
+		70E4C9482011DE6D0051B95E /* AlbumContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumContainerViewController.swift; sourceTree = "<group>"; };
 		70EEE6DE200DAF250096F31F /* MobileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileModel.swift; sourceTree = "<group>"; };
 		70EEE6E0200DAFB70096F31F /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		70EEE6E2200DB4060096F31F /* MobileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileViewModel.swift; sourceTree = "<group>"; };
@@ -350,6 +354,8 @@
 		70E3D2421FF77231002CB5CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				70E4C9472011DE570051B95E /* AlbumContainerViewController */,
+				70E4C9442011D86B0051B95E /* AlbumPageViewController */,
 				7048B86120104CE80074BAE1 /* ARCameraViewController */,
 				70EEE6FA200E42400096F31F /* ContainerForPageViewController */,
 				70EEE6F4200E07390096F31F /* MobileViewController */,
@@ -388,6 +394,22 @@
 				70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		70E4C9442011D86B0051B95E /* AlbumPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70E4C9452011D88B0051B95E /* AlbumPageViewController.swift */,
+			);
+			path = AlbumPageViewController;
+			sourceTree = "<group>";
+		};
+		70E4C9472011DE570051B95E /* AlbumContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70E4C9482011DE6D0051B95E /* AlbumContainerViewController.swift */,
+			);
+			path = AlbumContainerViewController;
 			sourceTree = "<group>";
 		};
 		70EEE6E4200DBBB20096F31F /* collectionViewCell */ = {
@@ -745,6 +767,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7048B86320104D070074BAE1 /* ARCameraViewController.swift in Sources */,
+				70E4C9462011D88B0051B95E /* AlbumPageViewController.swift in Sources */,
 				7048393E200465E600E74C93 /* MyColorStruct.swift in Sources */,
 				70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */,
 				70557BC92008B6EF00198227 /* ProfileViewModel.swift in Sources */,
@@ -759,6 +782,7 @@
 				70557BCD2009EA2F00198227 /* MapModel.swift in Sources */,
 				70AAA0B9200C936900F797C3 /* AlbumViewModel.swift in Sources */,
 				70EEE6F0200DF6E20096F31F /* PageViewController.swift in Sources */,
+				70E4C9492011DE6D0051B95E /* AlbumContainerViewController.swift in Sources */,
 				70E3D21A1FF75E06002CB5CF /* Twin_Synergy.xcdatamodeld in Sources */,
 				70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */,
 				70EEE6EA200DD5F60096F31F /* webViewModel.swift in Sources */,
