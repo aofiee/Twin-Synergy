@@ -10,10 +10,10 @@ import UIKit
 
 class ContainerForPageViewController: CustomNavigationController {
 
-    @IBOutlet var pageViewContainer: UIView!
-    @IBOutlet var allBtn: UIButton!
-    @IBOutlet var webBtn: UIButton!
-    @IBOutlet var mobileBtn: UIButton!
+    @IBOutlet weak var pageViewContainer: UIView!
+    @IBOutlet weak var allBtn: UIButton!
+    @IBOutlet weak var webBtn: UIButton!
+    @IBOutlet weak var mobileBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         initNotificationCenter()

@@ -1,29 +1,30 @@
 //
-//  MobileViewController.swift
+//  AlbumListWebViewController.swift
 //  Twin Synergy
 //
-//  Created by SkullTree on 16/1/2561 BE.
+//  Created by SkullTree on 24/1/2561 BE.
 //  Copyright © 2561 SkullTree. All rights reserved.
 //
 
 import UIKit
 
-class MobileViewController: UIViewController {
-
+class AlbumListWebViewController: UIViewController {
+    
     @IBOutlet weak var viewCollection: UICollectionView!
     fileprivate let itemsPerRow: CGFloat = 2
-    fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
+    fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 10.0, right: 10.0)
     private var mobileListViewModel: MobileViewModel!
+    private var webListViewModel: WebViewModel!
     private var dataAccess :DataAccess!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.viewDidLoad()
-        self.dataAccess = DataAccess()
-        self.mobileListViewModel = MobileViewModel(dataAccess: self.dataAccess)
+        dataAccess = DataAccess()
+        mobileListViewModel = MobileViewModel(dataAccess: dataAccess)
+        webListViewModel = WebViewModel(dataAccess: dataAccess)
         viewCollection.reloadData()
-
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -31,7 +32,8 @@ class MobileViewController: UIViewController {
 
 }
 
-extension MobileViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+
+extension AlbumListWebViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -39,39 +41,25 @@ extension MobileViewController: UICollectionViewDataSource, UICollectionViewDele
         print(self.mobileListViewModel.mobileViewModels.count)
         return self.mobileListViewModel.mobileViewModels.count
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MobileCell", for: indexPath) as! mobileDetailCell
-        cell.coverImageView.image = UIImage.init(named: self.mobileListViewModel.mobileViewModels[indexPath.item].mobileCoverBig)
-        cell.titleLabel.text = self.mobileListViewModel.mobileViewModels[indexPath.item].mobileTitle
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "albumListWebCell", for: indexPath) as! albumListCollectionViewCell
+        cell.coverImageView.image = UIImage.init(named: self.mobileListViewModel.mobileViewModels[indexPath.item].mobileCoverLand)
+        cell.headerLabel.text = self.mobileListViewModel.mobileViewModels[indexPath.item].mobileTitle
         cell.descLabel.text = self.mobileListViewModel.mobileViewModels[indexPath.item].mobileDescription
-        cell.contentView.alpha = 0
         return cell
-    }
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "MobileCellHeader", for: indexPath)
-        return headerView
-    }
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        var myView = UIView()
-        myView = cell.contentView
-        UIView.animate(withDuration: 0.8, animations: {
-            myView.alpha = 1.0
-        })
     }
 }
 
-extension MobileViewController : UICollectionViewDelegateFlowLayout {
+extension AlbumListWebViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-        let paddingSpaceTop = sectionInsets.top * 2
         let availableWidth = view.frame.width - paddingSpace
-        let availableHeight = (view.frame.height / itemsPerRow) - paddingSpaceTop
+        let availableHeight = (view.frame.height/2)
         let widthPerItem = availableWidth / itemsPerRow
-        
-        return CGSize(width: widthPerItem, height: availableHeight)
+        let heightPerItem = availableHeight / itemsPerRow
+        return CGSize(width: widthPerItem, height: heightPerItem)
     }
     
     func collectionView(_ collectionView: UICollectionView,

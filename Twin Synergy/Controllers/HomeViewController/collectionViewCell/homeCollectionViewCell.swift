@@ -9,7 +9,7 @@
 import UIKit
 
 class homeCollectionViewCell: UICollectionViewCell {
-    @IBOutlet var coverImage: UIImageView!
-    @IBOutlet var titleHeader: UILabel!
-    @IBOutlet var desc: UILabel!
+    @IBOutlet weak var coverImage: UIImageView!
+    @IBOutlet weak var titleHeader: UILabel!
+    @IBOutlet weak var desc: UILabel!
 }

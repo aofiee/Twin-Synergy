@@ -8,8 +8,8 @@
 
 import UIKit
 
-class WebSiteViewController: CustomNavigationController {
-    @IBOutlet var myTab: UITableView!
+class WebSiteViewController: UIViewController {
+    @IBOutlet weak var myTab: UITableView!
     fileprivate let itemsPerRow: CGFloat = 3
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
     private var mobileListViewModel: MobileViewModel!
@@ -39,11 +39,19 @@ extension WebSiteViewController: UITableViewDataSource, UITableViewDelegate {
         cell.coverImageView.image = UIImage.init(named: self.webListViewModel.webViewModels[indexPath.row].webCover)
         cell.titleLabel.text = self.webListViewModel.webViewModels[indexPath.row].webTitle
         cell.descLabel.text = self.webListViewModel.webViewModels[indexPath.row].webDescription
+        cell.contentView.alpha = 0
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 304;
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        var myView = UIView()
+        myView = cell.contentView
+        UIView.animate(withDuration: 0.8, animations: {
+            myView.alpha = 1.0
+        })
     }
 }
 

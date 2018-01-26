@@ -42,6 +42,13 @@ class HomeViewControllerTests: XCTestCase {
         XCTAssertEqual(mobileModel.mobileCover, "tall1")
         XCTAssertEqual(mobileModel.mobileTitle, "MyHeader")
         XCTAssertEqual(mobileModel.mobileDescription, desc)
+        XCTAssertNil(mobileModel.storyboardName)
+        
+        let mobileModel2 = MobileModel(mobileCover: "tall1", mobileTitle: "MyHeader", mobileDescription: desc, storyboardName: "MyStoryboard")
+        XCTAssertEqual(mobileModel2.mobileCover, "tall1")
+        XCTAssertEqual(mobileModel2.mobileTitle, "MyHeader")
+        XCTAssertEqual(mobileModel2.mobileDescription, desc)
+        XCTAssertNotNil(mobileModel2.storyboardName)
     }
     
     func testDataAccess(){
@@ -52,7 +59,7 @@ class HomeViewControllerTests: XCTestCase {
         
         let webData = dataAccess.getWeb()
         XCTAssertNotNil(webData)
-        XCTAssertEqual(webData[0].webCover, "tall1")
+        XCTAssertEqual(webData[0].webCover, "land1")
     }
     
     func testMobileViewModel(){
@@ -76,7 +83,7 @@ class HomeViewControllerTests: XCTestCase {
         let dataAccess = DataAccess()
         let webViewModelData = WebViewModel(dataAccess: dataAccess)
         XCTAssertNotNil(webViewModelData)
-        XCTAssertEqual(webViewModelData.webViewModels[0].webCover, "tall1")
+        XCTAssertEqual(webViewModelData.webViewModels[0].webCover, "land1")
     }
     
 }

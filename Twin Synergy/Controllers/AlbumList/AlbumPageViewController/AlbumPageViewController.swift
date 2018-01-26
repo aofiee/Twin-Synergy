@@ -23,9 +23,8 @@ class AlbumPageViewController: UIPageViewController {
     }
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [
-            self.newColoredViewController(viewName: "HomeViewController"),
-            self.newColoredViewController(viewName: "WebSiteViewController"),
-            self.newColoredViewController(viewName: "MobileViewController")
+            self.newColoredViewController(viewName: "AlbumListWebViewController"),
+            self.newColoredViewController(viewName: "AlbumListMobileViewController"),
         ]
     }()
     private func newColoredViewController(viewName: String) -> UIViewController {

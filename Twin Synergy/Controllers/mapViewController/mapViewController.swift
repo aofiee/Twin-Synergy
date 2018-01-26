@@ -12,7 +12,7 @@ import CoreLocation
 
 class mapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDelegate {
 
-    @IBOutlet var mapView: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     private var mapViewModel: MapViewModel!
     let mAddress = """
@@ -33,15 +33,15 @@ class mapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
     }
     func setupMapView(){
         mapViewModel = MapViewModel(map: MapModel(placeName: "Twin Synergy Co., Ltd.", address: mAddress, lat: 13.7405067, lng: 100.6314097))
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.startUpdatingLocation()
-        self.mapView.showsUserLocation = true
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        mapView.showsUserLocation = true
         
         let center = CLLocationCoordinate2D(latitude: CLLocationDegrees(mapViewModel.lat), longitude: CLLocationDegrees(mapViewModel.lng))
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
-        self.mapView.setRegion(region, animated: true)
+        mapView.setRegion(region, animated: true)
         
         let annotation = MKPointAnnotation()
         annotation.title = mapViewModel.placeName
@@ -55,5 +55,19 @@ class mapViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDe
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    override func viewWillDisappear(_ animated:Bool){
+        super.viewWillDisappear(animated)
+        applyMapViewMemoryFix()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mapView.showsUserLocation = true
+        mapView.delegate = self
+        
+    }
+    func applyMapViewMemoryFix(){
+        mapView.showsUserLocation = false
+        mapView.delegate = nil
+        //mapView.removeFromSuperview()
+    }
 }

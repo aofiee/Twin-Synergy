@@ -8,10 +8,10 @@
 
 import UIKit
 
-class HomeViewController: CustomNavigationController {
+class HomeViewController: UIViewController {
 
-    @IBOutlet var myTab: UITableView!
-    @IBOutlet var viewCollection: UICollectionView!
+    @IBOutlet weak var myTab: UITableView!
+    @IBOutlet weak var viewCollection: UICollectionView!
     fileprivate let itemsPerRow: CGFloat = 3
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 20.0, right: 10.0)
     private var mobileListViewModel: MobileViewModel!
@@ -20,16 +20,15 @@ class HomeViewController: CustomNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dataAccess = DataAccess()
-        self.mobileListViewModel = MobileViewModel(dataAccess: self.dataAccess)
-        self.webListViewModel = WebViewModel(dataAccess: self.dataAccess)
+        dataAccess = DataAccess()
+        mobileListViewModel = MobileViewModel(dataAccess: dataAccess)
+        webListViewModel = WebViewModel(dataAccess: dataAccess)
         viewCollection.reloadData()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
@@ -42,11 +41,19 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         cell.coverImageView.image = UIImage.init(named: self.webListViewModel.webViewModels[indexPath.row].webCover)
         cell.titleLabel.text = self.webListViewModel.webViewModels[indexPath.row].webTitle
         cell.descLabel.text = self.webListViewModel.webViewModels[indexPath.row].webDescription
+        cell.contentView.alpha = 0
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 304;
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        var myView = UIView()
+        myView = cell.contentView
+        UIView.animate(withDuration: 0.8, animations: {
+                myView.alpha = 1.0
+            })
     }
 }
 
@@ -58,7 +65,6 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         print(self.mobileListViewModel.mobileViewModels.count)
         return self.mobileListViewModel.mobileViewModels.count
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeMobileCell", for: indexPath) as! homeCollectionViewCell
         cell.coverImage.image = UIImage.init(named: self.mobileListViewModel.mobileViewModels[indexPath.item].mobileCover)
@@ -66,7 +72,6 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         cell.desc.text = self.mobileListViewModel.mobileViewModels[indexPath.item].mobileDescription
         return cell
     }
-    
 }
 
 extension HomeViewController : UICollectionViewDelegateFlowLayout {

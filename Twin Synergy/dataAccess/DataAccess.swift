@@ -26,6 +26,7 @@ class DataAccess{
         let desc = """
                    A simple, highly customisable, data-driven 3D carousel
                    """
+        mobiles.append(MobileModel(mobileCover: "tall1", mobileTitle: "FACE REKOGNITION", mobileDescription: desc, storyboardName: "faceRekognitionViewController"))
         mobiles.append(MobileModel(mobileCover: "tall1", mobileTitle: "CRYSTALCLUB", mobileDescription: desc))
         mobiles.append(MobileModel(mobileCover: "tall2", mobileTitle: "BEAR SEEKING", mobileDescription: desc))
         mobiles.append(MobileModel(mobileCover: "tall3", mobileTitle: "MELLO", mobileDescription: desc))

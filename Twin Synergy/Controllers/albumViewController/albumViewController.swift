@@ -14,7 +14,7 @@ class albumViewController: CustomNavigationController {
 
     private var albumListViewModel :AlbumViewModel!
     private var dataAccess :DataAccess!
-    @IBOutlet var viewCollection: UICollectionView!
+    @IBOutlet weak var viewCollection: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,17 @@ class albumViewController: CustomNavigationController {
         self.albumListViewModel = AlbumViewModel(dataAccess: self.dataAccess)
         viewCollection.reloadData()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewCollection.delegate = self
+        viewCollection.dataSource = self
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        viewCollection.delegate = nil
+        viewCollection.dataSource = nil
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

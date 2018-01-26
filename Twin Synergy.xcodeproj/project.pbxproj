@@ -23,6 +23,7 @@
 		70557BCF2009ED4500198227 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70557BCE2009ED4500198227 /* MapViewModel.swift */; };
 		708CE7D12005E5C5004FD874 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */; };
 		708CE7D32005EB61004FD874 /* ProfileViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */; };
+		708EAA4A2019CFC9001E5363 /* albumListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708EAA492019CFC9001E5363 /* albumListCollectionViewCell.swift */; };
 		70AAA0B9200C936900F797C3 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AAA0B8200C936900F797C3 /* AlbumViewModel.swift */; };
 		70AAA0BC200CA34900F797C3 /* albumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AAA0BB200CA34900F797C3 /* albumCollectionViewCell.swift */; };
 		70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA21FF7DFE70055464A /* ProfileViewController.swift */; };
@@ -30,6 +31,8 @@
 		70C39AA91FF7EBC70055464A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C39AA81FF7EBC70055464A /* MessageUI.framework */; };
 		70C39AAF1FF7FF590055464A /* mainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AAE1FF7FF590055464A /* mainMenuViewController.swift */; };
 		70C57A5D20046207002BC17F /* MyColorStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C57A5C20046207002BC17F /* MyColorStructTests.swift */; };
+		70D7269920184577005EF45D /* AlbumListWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D7269820184577005EF45D /* AlbumListWebViewController.swift */; };
+		70D7269C20184618005EF45D /* AlbumListMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D7269B20184618005EF45D /* AlbumListMobileViewController.swift */; };
 		70E3D2121FF75E06002CB5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2111FF75E06002CB5CF /* AppDelegate.swift */; };
 		70E3D2141FF75E06002CB5CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3D2131FF75E06002CB5CF /* ViewController.swift */; };
 		70E3D2171FF75E06002CB5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E3D2151FF75E06002CB5CF /* Main.storyboard */; };
@@ -95,6 +98,7 @@
 		70557BCE2009ED4500198227 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerTest.swift; sourceTree = "<group>"; };
+		708EAA492019CFC9001E5363 /* albumListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumListCollectionViewCell.swift; sourceTree = "<group>"; };
 		70AAA0B8200C936900F797C3 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
 		70AAA0BB200CA34900F797C3 /* albumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumCollectionViewCell.swift; sourceTree = "<group>"; };
 		70C39AA21FF7DFE70055464A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		70C39AA81FF7EBC70055464A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		70C39AAE1FF7FF590055464A /* mainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMenuViewController.swift; sourceTree = "<group>"; };
 		70C57A5C20046207002BC17F /* MyColorStructTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorStructTests.swift; sourceTree = "<group>"; };
+		70D7269820184577005EF45D /* AlbumListWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListWebViewController.swift; sourceTree = "<group>"; };
+		70D7269B20184618005EF45D /* AlbumListMobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListMobileViewController.swift; sourceTree = "<group>"; };
 		70E3D20E1FF75E06002CB5CF /* Twin Synergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twin Synergy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3D2111FF75E06002CB5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70E3D2131FF75E06002CB5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +245,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		708EAA472019CF8A001E5363 /* AlbumList */ = {
+			isa = PBXGroup;
+			children = (
+				708EAA482019CFA8001E5363 /* collectionViewCell */,
+				70E4C9472011DE570051B95E /* AlbumContainerViewController */,
+				70E4C9442011D86B0051B95E /* AlbumPageViewController */,
+				70D7269A20184606005EF45D /* AlbumListMobileViewController */,
+				70D7269720183242005EF45D /* AlbumListWebViewController */,
+			);
+			path = AlbumList;
+			sourceTree = "<group>";
+		};
+		708EAA482019CFA8001E5363 /* collectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				708EAA492019CFC9001E5363 /* albumListCollectionViewCell.swift */,
+			);
+			path = collectionViewCell;
+			sourceTree = "<group>";
+		};
 		70AAA0BA200CA32A00F797C3 /* collectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +314,22 @@
 				70C39AAE1FF7FF590055464A /* mainMenuViewController.swift */,
 			);
 			path = mainMenuViewController;
+			sourceTree = "<group>";
+		};
+		70D7269720183242005EF45D /* AlbumListWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70D7269820184577005EF45D /* AlbumListWebViewController.swift */,
+			);
+			path = AlbumListWebViewController;
+			sourceTree = "<group>";
+		};
+		70D7269A20184606005EF45D /* AlbumListMobileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				70D7269B20184618005EF45D /* AlbumListMobileViewController.swift */,
+			);
+			path = AlbumListMobileViewController;
 			sourceTree = "<group>";
 		};
 		70E3D2051FF75E06002CB5CF = {
@@ -354,8 +396,7 @@
 		70E3D2421FF77231002CB5CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				70E4C9472011DE570051B95E /* AlbumContainerViewController */,
-				70E4C9442011D86B0051B95E /* AlbumPageViewController */,
+				708EAA472019CF8A001E5363 /* AlbumList */,
 				7048B86120104CE80074BAE1 /* ARCameraViewController */,
 				70EEE6FA200E42400096F31F /* ContainerForPageViewController */,
 				70EEE6F4200E07390096F31F /* MobileViewController */,
@@ -788,6 +829,7 @@
 				70EEE6EA200DD5F60096F31F /* webViewModel.swift in Sources */,
 				70557BC72008B6E000198227 /* ProfileModel.swift in Sources */,
 				70EEE6F3200DFDC50096F31F /* WebSiteViewController.swift in Sources */,
+				70D7269C20184618005EF45D /* AlbumListMobileViewController.swift in Sources */,
 				70EEE6E3200DB4060096F31F /* MobileViewModel.swift in Sources */,
 				70AAA0BC200CA34900F797C3 /* albumCollectionViewCell.swift in Sources */,
 				70EEE6DF200DAF250096F31F /* MobileModel.swift in Sources */,
@@ -795,8 +837,10 @@
 				70E3D2511FF78FC9002CB5CF /* CustomNavigationController.swift in Sources */,
 				7051C01C200A716F00574FD8 /* AlbumModel.swift in Sources */,
 				70EEE6F9200E09B20096F31F /* mobileDetailCell.swift in Sources */,
+				70D7269920184577005EF45D /* AlbumListWebViewController.swift in Sources */,
 				70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */,
 				70EEE6ED200DE9920096F31F /* homeTableViewCell.swift in Sources */,
+				708EAA4A2019CFC9001E5363 /* albumListCollectionViewCell.swift in Sources */,
 				70C39AA61FF7E4110055464A /* mapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
