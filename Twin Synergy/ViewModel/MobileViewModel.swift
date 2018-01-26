@@ -18,7 +18,7 @@ class MobileViewModel {
     private func getMobiles(){
         let mobiles = self.dataAccess.getMobile()
         self.mobileViewModels = mobiles.flatMap { mobile in
-            return MobileModel(mobileCover: mobile.mobileCover, mobileTitle: mobile.mobileTitle, mobileDescription: mobile.mobileDescription)
+            return MobileModel(mobileCover: mobile.mobileCover, mobileTitle: mobile.mobileTitle, mobileDescription: mobile.mobileDescription, storyboardName: mobile.storyboardName)
         }
     }
 }

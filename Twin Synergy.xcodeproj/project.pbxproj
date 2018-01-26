@@ -24,6 +24,8 @@
 		708CE7D12005E5C5004FD874 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */; };
 		708CE7D32005EB61004FD874 /* ProfileViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */; };
 		708EAA4A2019CFC9001E5363 /* albumListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708EAA492019CFC9001E5363 /* albumListCollectionViewCell.swift */; };
+		709FB2F6201B123A00C4AC61 /* faceRekognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709FB2F5201B123A00C4AC61 /* faceRekognitionViewController.swift */; };
+		709FB2F8201B162D00C4AC61 /* CustomNormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709FB2F7201B162D00C4AC61 /* CustomNormalView.swift */; };
 		70AAA0B9200C936900F797C3 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AAA0B8200C936900F797C3 /* AlbumViewModel.swift */; };
 		70AAA0BC200CA34900F797C3 /* albumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AAA0BB200CA34900F797C3 /* albumCollectionViewCell.swift */; };
 		70C39AA31FF7DFE70055464A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C39AA21FF7DFE70055464A /* ProfileViewController.swift */; };
@@ -99,6 +101,8 @@
 		708CE7D02005E5C5004FD874 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		708CE7D22005EB61004FD874 /* ProfileViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerTest.swift; sourceTree = "<group>"; };
 		708EAA492019CFC9001E5363 /* albumListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumListCollectionViewCell.swift; sourceTree = "<group>"; };
+		709FB2F5201B123A00C4AC61 /* faceRekognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faceRekognitionViewController.swift; sourceTree = "<group>"; };
+		709FB2F7201B162D00C4AC61 /* CustomNormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNormalView.swift; sourceTree = "<group>"; };
 		70AAA0B8200C936900F797C3 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
 		70AAA0BB200CA34900F797C3 /* albumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumCollectionViewCell.swift; sourceTree = "<group>"; };
 		70C39AA21FF7DFE70055464A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +269,14 @@
 			path = collectionViewCell;
 			sourceTree = "<group>";
 		};
+		709FB2F4201B122600C4AC61 /* faceRekognitionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				709FB2F5201B123A00C4AC61 /* faceRekognitionViewController.swift */,
+			);
+			path = faceRekognitionViewController;
+			sourceTree = "<group>";
+		};
 		70AAA0BA200CA32A00F797C3 /* collectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +408,7 @@
 		70E3D2421FF77231002CB5CF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				709FB2F4201B122600C4AC61 /* faceRekognitionViewController */,
 				708EAA472019CF8A001E5363 /* AlbumList */,
 				7048B86120104CE80074BAE1 /* ARCameraViewController */,
 				70EEE6FA200E42400096F31F /* ContainerForPageViewController */,
@@ -433,6 +446,7 @@
 			isa = PBXGroup;
 			children = (
 				70E3D2501FF78FC9002CB5CF /* CustomNavigationController.swift */,
+				709FB2F7201B162D00C4AC61 /* CustomNormalView.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -821,6 +835,7 @@
 				70EEE6F6200E075E0096F31F /* MobileViewController.swift in Sources */,
 				70557BCF2009ED4500198227 /* MapViewModel.swift in Sources */,
 				70557BCD2009EA2F00198227 /* MapModel.swift in Sources */,
+				709FB2F8201B162D00C4AC61 /* CustomNormalView.swift in Sources */,
 				70AAA0B9200C936900F797C3 /* AlbumViewModel.swift in Sources */,
 				70EEE6F0200DF6E20096F31F /* PageViewController.swift in Sources */,
 				70E4C9492011DE6D0051B95E /* AlbumContainerViewController.swift in Sources */,
@@ -840,6 +855,7 @@
 				70D7269920184577005EF45D /* AlbumListWebViewController.swift in Sources */,
 				70E3D2491FF77294002CB5CF /* HomeViewController.swift in Sources */,
 				70EEE6ED200DE9920096F31F /* homeTableViewCell.swift in Sources */,
+				709FB2F6201B123A00C4AC61 /* faceRekognitionViewController.swift in Sources */,
 				708EAA4A2019CFC9001E5363 /* albumListCollectionViewCell.swift in Sources */,
 				70C39AA61FF7E4110055464A /* mapViewController.swift in Sources */,
 			);

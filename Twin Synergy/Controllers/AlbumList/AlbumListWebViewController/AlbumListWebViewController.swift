@@ -13,14 +13,12 @@ class AlbumListWebViewController: UIViewController {
     @IBOutlet weak var viewCollection: UICollectionView!
     fileprivate let itemsPerRow: CGFloat = 2
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 10.0, bottom: 10.0, right: 10.0)
-    private var mobileListViewModel: MobileViewModel!
     private var webListViewModel: WebViewModel!
     private var dataAccess :DataAccess!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dataAccess = DataAccess()
-        mobileListViewModel = MobileViewModel(dataAccess: dataAccess)
         webListViewModel = WebViewModel(dataAccess: dataAccess)
         viewCollection.reloadData()
     }
@@ -38,14 +36,13 @@ extension AlbumListWebViewController: UICollectionViewDataSource, UICollectionVi
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(self.mobileListViewModel.mobileViewModels.count)
-        return self.mobileListViewModel.mobileViewModels.count
+        return self.webListViewModel.webViewModels.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "albumListWebCell", for: indexPath) as! albumListCollectionViewCell
-        cell.coverImageView.image = UIImage.init(named: self.mobileListViewModel.mobileViewModels[indexPath.item].mobileCoverLand)
-        cell.headerLabel.text = self.mobileListViewModel.mobileViewModels[indexPath.item].mobileTitle
-        cell.descLabel.text = self.mobileListViewModel.mobileViewModels[indexPath.item].mobileDescription
+        cell.coverImageView.image = UIImage.init(named: self.webListViewModel.webViewModels[indexPath.item].webCover)
+        cell.headerLabel.text = self.webListViewModel.webViewModels[indexPath.item].webTitle
+        cell.descLabel.text = self.webListViewModel.webViewModels[indexPath.item].webDescription
         return cell
     }
 }
