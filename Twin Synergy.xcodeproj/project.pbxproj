@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B755EAFF6515D2D06ADFAD9 /* Pods_Twin_Synergy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520E01D78A953AA1E3DD1EC3 /* Pods_Twin_Synergy.framework */; };
 		48A4FC0EAD2A767CAD770120 /* Pods_Twin_SynergyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3E533111181D6D622B0CCB /* Pods_Twin_SynergyUITests.framework */; };
+		7042DE19201C9C7F002DA657 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7042DE18201C9C7F002DA657 /* awsconfiguration.json */; };
 		70453E9820109AE70051714C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 70453E9720109AE70051714C /* art.scnassets */; };
 		7048393E200465E600E74C93 /* MyColorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048393D200465E600E74C93 /* MyColorStruct.swift */; };
 		7048B86320104D070074BAE1 /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048B86220104D070074BAE1 /* ARCameraViewController.swift */; };
@@ -86,6 +87,7 @@
 		4D950B4039C55726391F2BF8 /* Pods-Twin Synergy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin Synergy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy.release.xcconfig"; sourceTree = "<group>"; };
 		520E01D78A953AA1E3DD1EC3 /* Pods_Twin_Synergy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twin_Synergy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DCEDC6BE93BD5932B3DD7E /* Pods-Twin SynergyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twin SynergyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twin SynergyUITests/Pods-Twin SynergyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7042DE18201C9C7F002DA657 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		70453E9720109AE70051714C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		7048393D200465E600E74C93 /* MyColorStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorStruct.swift; sourceTree = "<group>"; };
 		7048B86220104D070074BAE1 /* ARCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraViewController.swift; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 				70E3D2111FF75E06002CB5CF /* AppDelegate.swift */,
 				70E3D2131FF75E06002CB5CF /* ViewController.swift */,
 				70E3D2151FF75E06002CB5CF /* Main.storyboard */,
+				7042DE18201C9C7F002DA657 /* awsconfiguration.json */,
 				70E3D21B1FF75E06002CB5CF /* Assets.xcassets */,
 				70E3D21D1FF75E06002CB5CF /* LaunchScreen.storyboard */,
 				70E3D2201FF75E06002CB5CF /* Info.plist */,
@@ -641,6 +644,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7042DE19201C9C7F002DA657 /* awsconfiguration.json in Resources */,
 				70E3D21F1FF75E06002CB5CF /* LaunchScreen.storyboard in Resources */,
 				70E3D21C1FF75E06002CB5CF /* Assets.xcassets in Resources */,
 				70453E9820109AE70051714C /* art.scnassets in Resources */,
@@ -705,7 +709,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSRekognition/AWSRekognition.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
@@ -713,7 +719,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSRekognition.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",

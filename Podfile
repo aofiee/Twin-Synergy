@@ -7,6 +7,7 @@ target 'Twin Synergy' do
 
   # Pods for Twin Synergy
 	pod 'Material', '~> 2.0'
+	pod 'AWSMobileClient'	
 	pod 'AWSRekognition'
 	pod 'AWSS3'
   target 'Twin SynergyTests' do

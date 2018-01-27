@@ -6,7 +6,7 @@
 ## Build generated
 build/
 DerivedData/
-
+awsconfiguration.json
 ## Various settings
 *.pbxuser
 !default.pbxuser

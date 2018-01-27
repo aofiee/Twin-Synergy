@@ -8,14 +8,20 @@
 
 import UIKit
 import CoreData
+import AWSCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let myColor = MyColorStruct(basedColor: "#FF8A00", basedBarColor: "#356A97", secondBarColor: "#17274E", titleColor: "#FFFFFF")
-    
+    func awsSetup() {
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USWest2, identityPoolId: "us-west-2_RjCjbBSwp")
+        let configuration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: credentialsProvider)
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        awsSetup()
         UIApplication.shared.statusBarStyle = .lightContent
         UITabBar.appearance().tintColor = myColor.hexStringToUIColor(hex: myColor.basedColor)
         UITabBar.appearance().barTintColor = myColor.hexStringToUIColor(hex: myColor.basedBarColor)
