@@ -536,7 +536,6 @@
 				70E3D20B1FF75E06002CB5CF /* Frameworks */,
 				70E3D20C1FF75E06002CB5CF /* Resources */,
 				631EF351D53E4D7B3FAE897D /* [CP] Embed Pods Frameworks */,
-				6EF7CB92341D63DB22EAF074 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -555,8 +554,6 @@
 				70E3D2211FF75E06002CB5CF /* Sources */,
 				70E3D2221FF75E06002CB5CF /* Frameworks */,
 				70E3D2231FF75E06002CB5CF /* Resources */,
-				6664A3DF801BEFCC2B608C91 /* [CP] Embed Pods Frameworks */,
-				00BE3AF148884BBC26476B03 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -576,8 +573,6 @@
 				70E3D22C1FF75E06002CB5CF /* Sources */,
 				70E3D22D1FF75E06002CB5CF /* Frameworks */,
 				70E3D22E1FF75E06002CB5CF /* Resources */,
-				F3454F95FC0662A2055E7915 /* [CP] Embed Pods Frameworks */,
-				ED7799A7CB8AD885724EB332 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -665,21 +660,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00BE3AF148884BBC26476B03 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin SynergyTests/Pods-Twin SynergyTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3394AC928879E804E2B64637 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -704,7 +684,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 			);
@@ -715,37 +695,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6664A3DF801BEFCC2B608C91 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin SynergyTests/Pods-Twin SynergyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6EF7CB92341D63DB22EAF074 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Twin Synergy/Pods-Twin Synergy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8A0ACA6845EAB7AADF98D576 /* [CP] Check Pods Manifest.lock */ = {
@@ -782,36 +732,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED7799A7CB8AD885724EB332 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin SynergyUITests/Pods-Twin SynergyUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3454F95FC0662A2055E7915 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twin SynergyUITests/Pods-Twin SynergyUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1030,10 +950,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				DEVELOPMENT_TEAM = U8E99U94GY;
 				INFOPLIST_FILE = "Twin Synergy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "th.co.twinsynergy.Twin-Synergy";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aofiee.Twin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1046,10 +967,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57RNBV4CEC;
+				DEVELOPMENT_TEAM = U8E99U94GY;
 				INFOPLIST_FILE = "Twin Synergy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "th.co.twinsynergy.Twin-Synergy";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aofiee.Twin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
